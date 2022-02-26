@@ -82,7 +82,7 @@
             }
         }
 
-        .section1 {
+        .insignias {
             flex-direction: row-reverse;
             justify-content: center;
             padding: 69px 33px;
@@ -91,7 +91,6 @@
 
         .nuestrasLineas {
             padding: 73px;
-            margin: 0;
             gap: 42px;
 
             .containerProductos {
@@ -148,7 +147,7 @@
             gap: 57px;
 
             h3 {
-                font-size: 22px;
+                font-size: 19px;
             }
 
             .containerIconos {
@@ -161,6 +160,7 @@
 
                     img {
                         width: 24px;
+                        height: 31px;
                     }
                 }
             }
@@ -377,13 +377,13 @@
             div{
                 align-items: center;
                 gap: 23px;
-                width: 285px;
+                width: 211px;
                 p{
                     font-size: 15px;
                     line-height: 24px;
                     align-self: flex-start;
                 }
-                a{
+                .inactivo{
                     padding: 12px 32px;
                     margin-top: 20px;
                 }
@@ -495,15 +495,16 @@
             }
         }
 
-        .section1 {
+        .insignias {
             padding: 56px 120px;
             gap: 106px;
 
             .icons {
                 gap: 29px;
 
-                img {
+                svg {
                     width: 104px;
+                    height: 104px;
                 }
             }
 
@@ -521,7 +522,6 @@
             align-items: center;
             padding: 63px;
             gap: 96px;
-
             h2 {
                 font-size: 27px
             }
@@ -620,6 +620,7 @@
 
                     img {
                         width: 35px;
+                        height: 45px;
                     }
 
                     p {
@@ -792,7 +793,7 @@
             align-items: center;
             height: 376px;
             padding: 112px 120px 32px 120px;
-            background-image: url("../img/cannabis_fondo_tablet.jpg");
+            background-image: url("../img/cannabis_fondo_desktop.jpg");
 
             h1 {
                 text-align: center;
@@ -907,7 +908,7 @@
     .lineaProductos{
         flex-direction: row;
         align-items: flex-start;
-        padding: 130px 222px 106px 120px;
+        padding: 130px 120px 106px 120px;
         gap: 121px;
         .descripcion{
             h1{
@@ -918,29 +919,62 @@
                 font-size: 40px;
                 line-height: 56px;
                 margin-top: 166px!important;
+                margin-bottom: 20px!important;
                 letter-spacing: 0.005em;
-                width: 692px;
+                width: 793px;
                 br{
                     display: inline;
                 }
+            }
+            .textoJabones{
+                margin-bottom: 70px!important;
             }
         }
         .productos{
             flex-direction: column;
             margin: auto 0 0 0;
+            width: 285px;
+            align-items: center;
             div{
                 gap: 13px;
                 position: relative;
+                width: 100%;
                 p{
                     font-size: 20px;
                     line-height: 24px;
                 }
+                .inactivo{
+                    display: none;
+                }
                 a{
-                    position: absolute;
-                    margin: 0;
-                    bottom: 118px;
-                    right: -69px;
-                    padding: 12px 41px;
+                    all: unset;
+                    cursor: pointer;
+                    width: 285px;
+                }
+                div{
+                    position: relative;
+                    &::after{
+                        content: 'VER PRODUCTO';
+                        font-size: 22px;
+                        font-weight: 700;
+                        color: $terciarioClaro;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(40, 82, 75, 0.8);
+                        opacity: 0;
+                        transition: 150ms ease-out;
+                    }
+                    &:hover{
+                        &::after{
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }

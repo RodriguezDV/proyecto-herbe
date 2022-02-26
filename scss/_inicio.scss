@@ -8,9 +8,12 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            border: 2px solid $gris;
+            border: unset;
+            background-color: $blanco;
+            opacity: 50%;
             &.active{
                 background-color: $blanco;
+                opacity: 1;
             }
             }
         }
@@ -131,17 +134,18 @@
             }
         }
     }
-    .section1{
+    .insignias{
         @include flex-column;
         align-items: center;
         background: $terciarioClaro;
         padding: 24px 16px;
-        gap: 8px;
+        gap: 19px;
         .icons{
             @include flex-row;
             gap: 16px;
-            img{
+            svg{
                 width: 70px;
+                height: 70px;
             }
         }
         .text{
@@ -155,7 +159,7 @@
     .nuestrasLineas{
         @include flex-column;
         gap: 34px;
-        padding: 19px 16px 48px 16px;
+        padding: 29px 16px 48px 16px;
         h2{
             flex-flow: column;
             color: $verdeOscuro;
@@ -280,8 +284,8 @@
         background-repeat: no-repeat;
         background-position: top;
         h3{
-            font-size: 15px;
-            font-weight: 800;
+            font-size: 19px;
+            font-weight: 600;
             color: $secundarioOscuro;
         }
         .containerIconos{
@@ -295,7 +299,7 @@
                     width: 18px;
                 }
                 p{
-                    font-size: 12px;
+                    font-size: 15px;
                     font-weight: 400;
                     color: $secundarioOscuro;
                 }

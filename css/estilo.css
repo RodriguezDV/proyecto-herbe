@@ -83,8 +83,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -92,7 +92,6 @@
   background-color: transparent;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
   box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
-  border: 2px solid #EBE3DA;
 }
 
 .popUpWhatsApp .nav-bottom .popup-whatsapp .content-whatsapp .logoWhatsApp {
@@ -338,11 +337,14 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #C4C4C4;
+  border: unset;
+  background-color: #FFFFFF;
+  opacity: 50%;
 }
 
 .inicio .carousel .carousel-indicators button.active {
   background-color: #FFFFFF;
+  opacity: 1;
 }
 
 .inicio .carousel .carruselNext {
@@ -518,7 +520,7 @@
   font-weight: 700;
 }
 
-.inicio .section1 {
+.inicio .insignias {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,10 +533,10 @@
           align-items: center;
   background: #F3EEE9;
   padding: 24px 16px;
-  gap: 8px;
+  gap: 19px;
 }
 
-.inicio .section1 .icons {
+.inicio .insignias .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,15 +547,16 @@
   gap: 16px;
 }
 
-.inicio .section1 .icons img {
+.inicio .insignias .icons svg {
   width: 70px;
+  height: 70px;
 }
 
-.inicio .section1 .text {
+.inicio .insignias .text {
   width: 317px;
 }
 
-.inicio .section1 .text p {
+.inicio .insignias .text p {
   font-weight: 400;
   font-size: 15px;
 }
@@ -567,7 +570,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 34px;
-  padding: 19px 16px 48px 16px;
+  padding: 29px 16px 48px 16px;
 }
 
 .inicio .nuestrasLineas h2 {
@@ -778,8 +781,8 @@
 }
 
 .inicio .comoTrabajamos h3 {
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 19px;
+  font-weight: 600;
   color: #285243;
 }
 
@@ -813,7 +816,7 @@
 }
 
 .inicio .comoTrabajamos .containerIconos div p {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   color: #285243;
 }
@@ -968,6 +971,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 64px;
 }
 
 .nosotros p {
@@ -1082,7 +1086,7 @@
 
 .nosotros .nosotrosImg img {
   position: absolute;
-  right: 0;
+  right: 17px;
   top: 0;
 }
 
@@ -1286,6 +1290,10 @@
           align-items: center;
   padding: 56px 16px 72px 16px;
   gap: 41px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .lineaProductos .descripcion {
@@ -1347,27 +1355,27 @@
   font-weight: 400;
 }
 
-.lineaProductos .productos div a {
+.lineaProductos .productos div .inactivo {
   margin-top: 7px;
   background-color: black;
   border-radius: 50px;
   padding: 8px 32px;
-  -webkit-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.lineaProductos .productos div a:hover {
+.lineaProductos .productos div .inactivo:hover {
   background-color: #C3B09A;
 }
 
-.lineaProductos .productos div a:hover button {
+.lineaProductos .productos div .inactivo:hover button {
   color: black;
 }
 
-.lineaProductos .productos div a button {
+.lineaProductos .productos div .inactivo button {
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -1457,7 +1465,7 @@
     line-height: 40px;
     font-weight: 800;
   }
-  .inicio .section1 {
+  .inicio .insignias {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -1470,7 +1478,6 @@
   }
   .inicio .nuestrasLineas {
     padding: 73px;
-    margin: 0;
     gap: 42px;
   }
   .inicio .nuestrasLineas .containerProductos div {
@@ -1523,7 +1530,7 @@
     gap: 57px;
   }
   .inicio .comoTrabajamos h3 {
-    font-size: 22px;
+    font-size: 19px;
   }
   .inicio .comoTrabajamos .containerIconos {
     -webkit-box-orient: horizontal;
@@ -1538,6 +1545,7 @@
   }
   .inicio .comoTrabajamos .containerIconos div img {
     width: 24px;
+    height: 31px;
   }
   .inicio .comunidad {
     margin: unset;
@@ -1728,7 +1736,7 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 23px;
-    width: 285px;
+    width: 211px;
   }
   .lineaProductos .productos div p {
     font-size: 15px;
@@ -1736,7 +1744,7 @@
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  .lineaProductos .productos div a {
+  .lineaProductos .productos div .inactivo {
     padding: 12px 32px;
     margin-top: 20px;
   }
@@ -1832,20 +1840,21 @@
     font-weight: 700;
     line-height: 56px;
   }
-  .inicio .section1 {
+  .inicio .insignias {
     padding: 56px 120px;
     gap: 106px;
   }
-  .inicio .section1 .icons {
+  .inicio .insignias .icons {
     gap: 29px;
   }
-  .inicio .section1 .icons img {
+  .inicio .insignias .icons svg {
     width: 104px;
+    height: 104px;
   }
-  .inicio .section1 .text {
+  .inicio .insignias .text {
     width: 542px;
   }
-  .inicio .section1 .text p {
+  .inicio .insignias .text p {
     font-size: 22px;
     font-weight: 400;
   }
@@ -1953,6 +1962,7 @@
   }
   .inicio .comoTrabajamos .containerIconos div img {
     width: 35px;
+    height: 45px;
   }
   .inicio .comoTrabajamos .containerIconos div p {
     font-size: 20px;
@@ -2112,7 +2122,7 @@
             align-items: center;
     height: 376px;
     padding: 112px 120px 32px 120px;
-    background-image: url("../img/cannabis_fondo_tablet.jpg");
+    background-image: url("../img/cannabis_fondo_desktop.jpg");
   }
   .cannabis-medicinal .banner h1 {
     text-align: center;
@@ -2225,7 +2235,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 130px 222px 106px 120px;
+    padding: 130px 120px 106px 120px;
     gap: 121px;
   }
   .lineaProductos .descripcion h1 {
@@ -2236,11 +2246,15 @@
     font-size: 40px;
     line-height: 56px;
     margin-top: 166px !important;
+    margin-bottom: 20px !important;
     letter-spacing: 0.005em;
-    width: 692px;
+    width: 793px;
   }
   .lineaProductos .descripcion p br {
     display: inline;
+  }
+  .lineaProductos .descripcion .textoJabones {
+    margin-bottom: 70px !important;
   }
   .lineaProductos .productos {
     -webkit-box-orient: vertical;
@@ -2248,21 +2262,57 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto 0 0 0;
+    width: 285px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .lineaProductos .productos div {
     gap: 13px;
     position: relative;
+    width: 100%;
   }
   .lineaProductos .productos div p {
     font-size: 20px;
     line-height: 24px;
   }
+  .lineaProductos .productos div .inactivo {
+    display: none;
+  }
   .lineaProductos .productos div a {
+    all: unset;
+    cursor: pointer;
+    width: 285px;
+  }
+  .lineaProductos .productos div div {
+    position: relative;
+  }
+  .lineaProductos .productos div div::after {
+    content: 'VER PRODUCTO';
+    font-size: 22px;
+    font-weight: 700;
+    color: #F3EEE9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    margin: 0;
-    bottom: 118px;
-    right: -69px;
-    padding: 12px 41px;
+    top: 0;
+    left: 0;
+    background-color: rgba(40, 82, 75, 0.8);
+    opacity: 0;
+    -webkit-transition: 150ms ease-out;
+    transition: 150ms ease-out;
+  }
+  .lineaProductos .productos div div:hover::after {
+    opacity: 1;
   }
 }
 
@@ -2284,6 +2334,8 @@ button, a {
 
 body {
   font-family: 'Poppins', sans-serif;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 body p {
