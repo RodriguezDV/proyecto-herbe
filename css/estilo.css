@@ -1,20 +1,4 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-body {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 226px;
-}
-
+@charset "UTF-8";
 @media only screen and (max-width: 390px) {
   .headerEstilos {
     display: -webkit-box;
@@ -1881,5 +1865,2360 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.popUpWhatsApp .nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  width: auto;
+  height: auto;
+  position: fixed;
+  z-index: 9;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp {
+  display: none;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 270px;
+  height: auto;
+  bottom: 85px;
+  right: 18px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  -webkit-animation: slideInRight .6s 0.0s both;
+          animation: slideInRight .6s 0.0s both;
+}
+
+@media only screen and (max-width: 480px) {
+  .popUpWhatsApp .nav-bottom .popup-whatsapp:focus-within {
+    -webkit-transform: translate(-68px, 70px);
+            transform: translate(-68px, 70px);
+  }
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .content-whatsapp .-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .content-whatsapp p {
+  color: #0E301A;
+  font-weight: 400;
+  font-size: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 0 0px 11px;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .content-whatsapp .closePopup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .content-whatsapp .logoWhatsApp {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 7px 7px 0 0;
+  gap: 11px;
+  background: #285243;
+  padding: 9px 29px 9px 14px;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .content-whatsapp .logoWhatsApp p {
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #F3EEE9;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #F3EEE9;
+  border-radius: 0 0 7px 7px;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom .whats-input[type=text] {
+  width: 207px;
+  height: 35px;
+  margin: 5px 0 12px 0;
+  resize: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 11px;
+  font-size: 0.8rem;
+  background-color: #ffffff;
+  padding: 3%;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom .whats-input[type=text]::-webkit-input-placeholder {
+  color: #444444;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom .whats-input[type=text]:-ms-input-placeholder {
+  color: #444444;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom .whats-input[type=text]::-ms-input-placeholder {
+  color: #444444;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom .whats-input[type=text]::placeholder {
+  color: #444444;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom .send-msPopup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+  border-radius: 50%;
+  margin-left: 11px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 3px solid #444444;
+}
+
+.popUpWhatsApp .nav-bottom .popup-whatsapp .-bottom div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.popUpWhatsApp .nav-bottom .whatsapp-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 46px;
+  height: 46px;
+  z-index: 8;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin: 10px;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+}
+
+.popUpWhatsApp .nav-bottom .whatsapp-button .float {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 60px;
+  bottom: 15px;
+  right: 15px;
+  background-color: #49C13A;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.popUpWhatsApp .nav-bottom .whatsapp-button .float:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #49C13A;
+}
+
+.popUpWhatsApp .nav-bottom .whatsapp-button .float .my-float {
+  padding: 10px;
+  font-size: 45px;
+}
+
+.popUpWhatsApp .nav-bottom .circle-anime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: #77bb4a;
+}
+
+.popUpWhatsApp .nav-bottom .is-active-whatsapp-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: .6s 0.0s both;
+          animation: .6s 0.0s both;
+  background-color: #f5f5f5;
+}
+
+.popUpWhatsApp .nav-bottom input.whats-input[type=text] {
+  width: 207px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0px solid #ffffff;
+  border-radius: 7px;
+  font-size: 1em;
+  background-color: #ffffff;
+  padding: 0px 0px 0px 10px;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  outline: none;
+}
+
+.popUpWhatsApp .nav-bottom input.whats-input[type=text]:focus {
+  background-color: #f8f8f8;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.popUpWhatsApp .nav-bottom .icon-font-color {
+  color: #EBE3DA;
+}
+
+.popUpWhatsApp .nav-bottom .icon-font-color--black {
+  color: #444444;
+  padding-left: 2px;
+  font-size: 19px;
+}
+
+.inicio .carousel {
+  height: 464px;
+}
+
+.inicio .carousel .carousel-indicators {
+  gap: 18px;
+}
+
+.inicio .carousel .carousel-indicators button {
+  background: transparent;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: unset;
+  background-color: #FFFFFF;
+  opacity: 50%;
+}
+
+.inicio .carousel .carousel-indicators button.active {
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+
+.inicio .carousel .carruselNext {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.inicio .carousel .carruselPrev {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.inicio .carousel .carousel-inner h1 {
+  font-size: 39px;
+  font-weight: 800;
+}
+
+.inicio .carousel .carousel-inner .carousel-item {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  height: 464px;
+}
+
+.inicio .carousel .carousel-inner .button {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0;
+  letter-spacing: 0.0125em;
+  color: #0E301A;
+  background: #FFFFFF;
+  padding: 24px 33px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.2);
+          box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.2);
+  border-radius: 50px;
+}
+
+.inicio .carousel .carousel-inner .w-100 {
+  width: auto !important;
+  height: 464px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.inicio .carousel .carousel-inner .carrusel1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicio .carousel .carousel-inner .carrusel1 .w-100 {
+  left: -57px;
+}
+
+.inicio .carousel .carousel-inner .carrusel2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicio .carousel .carousel-inner .carrusel2 .w-100 {
+  width: auto !important;
+  right: -16px;
+  bottom: 0;
+}
+
+.inicio .carousel .carousel-inner .carrusel2 .carousel-caption {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 278px;
+  bottom: 17.50rem;
+}
+
+.inicio .carousel .carousel-inner .carrusel3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicio .carousel .carousel-inner .carrusel3 .w-100 {
+  width: auto !important;
+  height: 129vw;
+  bottom: 0;
+  right: -220px;
+}
+
+.inicio .carousel .carousel-inner .carrusel3 .carousel-caption {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(150, 170, 167, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  gap: 42px;
+  width: 328px;
+  height: 352px;
+  padding: 40px;
+  left: 0;
+  right: 0;
+  bottom: 4.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inicio .carousel .carousel-inner .carrusel3 .carousel-caption h2 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 187px;
+  height: 172px;
+}
+
+.inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel p {
+  text-align: start;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel p .numero {
+  color: #FFFFFF;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.inicio .insignias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F3EEE9;
+  padding: 24px 16px;
+  gap: 19px;
+}
+
+.inicio .insignias .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.inicio .insignias .icons svg {
+  width: 70px;
+  height: 70px;
+}
+
+.inicio .insignias .text {
+  width: 317px;
+}
+
+.inicio .insignias .text p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.inicio .nuestrasLineas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 34px;
+  padding: 29px 16px 48px 16px;
+}
+
+.inicio .nuestrasLineas h2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  color: #0E301A;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.0015em;
+}
+
+.inicio .nuestrasLineas .containerProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.inicio .nuestrasLineas .containerProductos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  -webkit-animation-name: grow;
+          animation-name: grow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.inicio .nuestrasLineas .containerProductos div img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.15));
+          filter: drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.15));
+}
+
+.inicio .nuestrasLineas .containerProductos div h3 {
+  color: #285243;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.inicio .nuestrasLineas .containerProductos :nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.inicio .testimonios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/fondo_testimonios_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 56px 30px 0;
+}
+
+.inicio .testimonios .carousel {
+  width: 328px;
+  height: 320px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.1);
+          box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.1);
+}
+
+.inicio .testimonios .carousel .carousel-inner {
+  background: #FFFFFF;
+}
+
+.inicio .testimonios .carousel .carousel-inner h3 {
+  color: #0E301A;
+  font-size: 19px;
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 29px;
+  margin: 0 auto !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.inicio .testimonios .carousel .carousel-inner .carousel-item {
+  width: 320px;
+  height: 320px;
+  padding: 29px;
+  top: 59px;
+}
+
+.inicio .testimonios .carousel .carousel-inner .carousel-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.inicio .testimonios .carousel .carousel-inner .carousel-item .carousel-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inicio .testimonios .carousel .carousel-indicators {
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.inicio .testimonios .carousel .carousel-indicators button.active {
+  background: #0E301A;
+  border: 2px solid #0E301A;
+}
+
+.inicio .testimonios h2 {
+  text-align: center;
+  color: #F3EEE9;
+  width: 320px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.inicio .testimonios .h2Verde {
+  color: #285243;
+  margin: 124px 0 !important;
+}
+
+.inicio .testimonios .contenedor {
+  width: 100vw;
+  background: #F2F5F6;
+}
+
+.inicio .testimonios .contenedor .textoTestimonios {
+  -webkit-box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.1);
+          box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.1);
+  background-image: url("../img/fondo_texto.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 328px;
+  height: 256px;
+}
+
+.inicio .comoTrabajamos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 43px 0 55px;
+  gap: 25px;
+  background-image: url("../img/fondo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.inicio .comoTrabajamos h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #285243;
+}
+
+.inicio .comoTrabajamos .containerIconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+}
+
+.inicio .comoTrabajamos .containerIconos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.inicio .comoTrabajamos .containerIconos div img {
+  width: 18px;
+}
+
+.inicio .comoTrabajamos .containerIconos div p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #285243;
+}
+
+.inicio .comunidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F3EEE9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 12px 44px 12px;
+  width: 100%;
+  gap: 31px;
+  overflow: hidden;
+}
+
+.inicio .comunidad h3 {
+  text-align: center;
+  color: #0E301A;
+  font-size: 15px;
+  font-weight: 700;
+  width: 238px;
+}
+
+.inicio .comunidad .containerRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+  width: 340px;
+}
+
+.inicio .comunidad .containerRedes a.posteosFacebook .posteosInstagram, .inicio .comunidad .containerRedes a.posteosFacebook .posteosFacebook, .inicio .comunidad .containerRedes a.posteosInstagram .posteosInstagram, .inicio .comunidad .containerRedes a.posteosInstagram .posteosFacebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  background: #285243;
+  padding: 29px 24px 29px 14px;
+  width: 166px;
+  height: 108px;
+}
+
+.inicio .comunidad .containerRedes a.posteosFacebook .posteosInstagram p, .inicio .comunidad .containerRedes a.posteosFacebook .posteosFacebook p, .inicio .comunidad .containerRedes a.posteosInstagram .posteosInstagram p, .inicio .comunidad .containerRedes a.posteosInstagram .posteosFacebook p {
+  width: 120px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #F3EEE9;
+}
+
+.inicio .comunidad .containerRedes .posteosGeneral {
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  background: #285243;
+  padding: 29px 24px 29px 14px;
+  width: 166px;
+  height: 108px;
+}
+
+.inicio .comunidad .containerRedes .posteosGeneral p {
+  width: 104px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #F3EEE9;
+}
+
+.inicio .comunidad .containerRedes img {
+  width: 166px;
+  height: 108px;
+}
+
+.inicio .comunidad .containerRedes .imagen {
+  position: relative;
+}
+
+.inicio .comunidad .containerRedes .imagen svg {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.inicio .comunidad .containerRedes .inactivo {
+  display: none;
+}
+
+@-webkit-keyframes grow {
+  from {
+    opacity: 30%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    opacity: 100;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  from {
+    opacity: 30%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    opacity: 100;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 64px;
+}
+
+.nosotros p {
+  text-align: start;
+  color: #0E301A;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.nosotros .nuestraFilosofia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 328px;
+  height: 253px;
+  gap: 31px;
+}
+
+.nosotros .nuestraFilosofia h1 {
+  width: 156px;
+  height: 80px;
+  text-align: inherit;
+  color: #285243;
+  font-size: 33px;
+  font-weight: 800;
+}
+
+.nosotros .nuestraFilosofia p {
+  width: 328px;
+  height: 143px;
+}
+
+.nosotros .nuestroObjetivo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 42px;
+  margin-bottom: 17px;
+  gap: 31px 0;
+}
+
+.nosotros .nuestroObjetivo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosotros .nuestroObjetivo .div1 {
+  background-color: #EBE3DA;
+  width: 172px;
+  height: 208px;
+  padding: 32px 16px;
+}
+
+.nosotros .nuestroObjetivo .div2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 156px;
+}
+
+.nosotros .nuestroObjetivo .div2 h2 {
+  color: #285243;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.nosotros .nuestroObjetivo .div3 {
+  width: 327px;
+  height: 120px;
+}
+
+.nosotros .nosotrosImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  width: 328px;
+  height: 552px;
+}
+
+.nosotros .nosotrosImg img {
+  position: absolute;
+  right: 17px;
+  top: 0;
+}
+
+.nosotros .nosotrosImg div {
+  background: #EBE3DA;
+}
+
+.nosotros .nosotrosImg div p {
+  padding: 95px 16px 64px 16px;
+}
+
+.cannabis-medicinal {
+  background-color: #FFFFFF;
+}
+
+.cannabis-medicinal p {
+  text-align: start;
+  color: #F3EEE9;
+}
+
+.cannabis-medicinal .banner {
+  width: 100%;
+  height: 280px;
+  background-image: url("../img/cannabis_fondo_mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 27px 16px 24px 16px;
+}
+
+.cannabis-medicinal .banner h1 {
+  color: #F3EEE9;
+  font-size: 33px;
+  line-height: 40px;
+  font-weight: 800;
+  width: 208px;
+  height: 132px;
+  margin-bottom: 24px !important;
+}
+
+.cannabis-medicinal .banner p {
+  width: 327px;
+}
+
+.cannabis-medicinal .tituloHistoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 48px 0 31px;
+}
+
+.cannabis-medicinal .tituloHistoria .titulo {
+  padding: 72px 14px;
+  width: 178px;
+  height: 208px;
+  margin: 0 auto;
+}
+
+.cannabis-medicinal .tituloHistoria .titulo h2 {
+  text-align: center;
+  color: #285243;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.cannabis-medicinal .tituloHistoria .texto {
+  background: #F3EEE9;
+  padding: 35px 19px 40px 19px;
+}
+
+.cannabis-medicinal .tituloHistoria .texto p {
+  color: #0E301A;
+  width: 140px;
+  height: 137px;
+  font-weight: 400;
+}
+
+.cannabis-medicinal .tituloHistoria .texto .inactivo {
+  display: none;
+}
+
+.cannabis-medicinal .historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  padding: 0 17px;
+}
+
+.cannabis-medicinal .historia p {
+  color: #0E301A;
+}
+
+.cannabis-medicinal .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 37px;
+  padding: 0 16px;
+  margin: 37px 0px 40px 0px;
+}
+
+.cannabis-medicinal .productos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.cannabis-medicinal .productos div img {
+  width: 100px;
+  height: 100px;
+}
+
+.cannabis-medicinal .productos div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 208px;
+  gap: 4px;
+}
+
+.cannabis-medicinal .productos div div h4 {
+  color: #0E301A;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.cannabis-medicinal .productos div div p {
+  color: #0E301A;
+}
+
+.cannabis-medicinal .productos .invertido {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.cannabis-medicinal .mensaje {
+  padding: 40px 0 45px;
+  margin: 0 16px 64px;
+  background: #F3EEE9;
+}
+
+.cannabis-medicinal .mensaje h4 {
+  color: #0E301A;
+  text-align: center;
+  font-size: 19px;
+  line-height: 24px;
+  width: 324px;
+  height: 124px;
+  margin: 0 auto !important;
+}
+
+.lineaProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 56px 16px 72px 16px;
+  gap: 41px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.lineaProductos .descripcion {
+  padding: 0 0.5px;
+}
+
+.lineaProductos .descripcion h1 {
+  text-align: start;
+  font-size: 33px;
+  line-height: 40px;
+  color: #0E301A;
+  font-weight: 800;
+}
+
+.lineaProductos .descripcion p {
+  text-align: start;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #0E301A;
+  margin-top: 23px !important;
+}
+
+.lineaProductos .descripcion p br {
+  display: none;
+}
+
+.lineaProductos .productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+}
+
+.lineaProductos .productos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 156px;
+  gap: 12px;
+}
+
+.lineaProductos .productos div p {
+  text-align: start;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.lineaProductos .productos div .inactivo {
+  margin-top: 7px;
+  background-color: black;
+  border-radius: 50px;
+  padding: 8px 32px;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.lineaProductos .productos div .inactivo:hover {
+  background-color: #C3B09A;
+}
+
+.lineaProductos .productos div .inactivo:hover button {
+  color: black;
+}
+
+.lineaProductos .productos div .inactivo button {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+@media (min-width: 700px) {
+  .inicio .carousel .carousel-inner h1 {
+    text-align: start;
+  }
+  .inicio .carousel .carousel-inner .w-100 {
+    width: auto !important;
+  }
+  .inicio .carousel .carousel-inner .carousel-caption {
+    right: unset;
+    left: 10%;
+  }
+  .inicio .carousel .carousel-inner .carrusel1 .w-100 {
+    width: 100% !important;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .inicio .carousel .carousel-inner .carrusel2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inicio .carousel .carousel-inner .carrusel2 .w-100 {
+    width: 100% !important;
+    height: auto;
+    right: 0;
+    bottom: -45px;
+  }
+  .inicio .carousel .carousel-inner .carrusel2 .carousel-caption {
+    bottom: 11.25rem;
+    left: 38px;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .inicio .carousel .carousel-inner .carrusel2 .carousel-caption h1 {
+    text-align: center;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .w-100 {
+    width: 100% !important;
+    height: auto;
+    right: 0;
+    bottom: -45px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 680px;
+    height: 336px;
+    padding: 40px 58px 33px 58px;
+    gap: 111px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption h2 {
+    text-align: start;
+    font-size: 33px;
+    font-weight: 800;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 485px;
+    height: 256px;
+    gap: 25px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel p {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel p .numero {
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: 800;
+  }
+  .inicio .insignias {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 69px 33px;
+    gap: 24px;
+  }
+  .inicio .nuestrasLineas {
+    padding: 73px;
+    gap: 42px;
+  }
+  .inicio .nuestrasLineas .containerProductos div {
+    gap: 40px;
+  }
+  .inicio .nuestrasLineas .containerProductos div img {
+    width: 200px;
+    height: 200px;
+  }
+  .inicio .nuestrasLineas .containerProductos div h3 {
+    font-size: 33px;
+  }
+  .inicio .testimonios {
+    background-image: url("../img/fondo_testimonios_tablet.jpg");
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    padding: 72px 30px;
+  }
+  .inicio .testimonios .carousel {
+    height: 312px;
+  }
+  .inicio .testimonios .h2Verde {
+    display: none;
+  }
+  .inicio .testimonios h2 {
+    font-size: 33px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+  .inicio .testimonios .contenedor {
+    all: unset;
+    -webkit-box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.1);
+            box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.1);
+  }
+  .inicio .testimonios .contenedor .textoTestimonios {
+    background-image: url("../img/fondo_texto_tablet.png");
+    width: 328px;
+    height: 312px;
+  }
+  .inicio .comoTrabajamos {
+    background-image: unset;
+    background-color: #FFFFFF;
+    padding: 100px 91px;
+    gap: 57px;
+  }
+  .inicio .comoTrabajamos h3 {
+    font-size: 19px;
+  }
+  .inicio .comoTrabajamos .containerIconos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 8px;
+  }
+  .inicio .comoTrabajamos .containerIconos div {
+    width: 106px;
+    gap: 15px;
+  }
+  .inicio .comoTrabajamos .containerIconos div img {
+    width: 24px;
+    height: 31px;
+  }
+  .inicio .comunidad {
+    margin: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 36px;
+  }
+  .inicio .comunidad h3 {
+    font-size: 19px;
+    font-weight: 600;
+    width: auto;
+  }
+  .inicio .comunidad .containerRedes {
+    width: auto;
+  }
+  .inicio .comunidad .containerRedes .posteosInstagram,
+  .inicio .comunidad .containerRedes .posteosFacebook {
+    display: none;
+    width: 129px;
+    height: 104px;
+  }
+  .inicio .comunidad .containerRedes .inactivo {
+    display: block;
+  }
+  .inicio .comunidad .containerRedes .posteosGeneral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 129px;
+    height: 104px;
+  }
+  .inicio .comunidad .containerRedes .posteosGeneral svg {
+    width: 18px;
+  }
+  .inicio .comunidad .containerRedes img {
+    width: 129px;
+    height: 104px;
+  }
+  .nosotros {
+    padding: 56px 32px 96px 32px;
+  }
+  .nosotros .nuestraFilosofia {
+    width: 680px;
+    height: 184px;
+  }
+  .nosotros .nuestraFilosofia h1 {
+    width: 157px;
+    height: 80px;
+    font-size: 33px;
+    line-height: 40px;
+  }
+  .nosotros .nuestraFilosofia p {
+    width: 680px;
+    height: 73px;
+  }
+  .nosotros .nuestroObjetivo {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .nosotros .nuestroObjetivo .div1 {
+    width: 211px;
+    height: 208px;
+    padding: 31px 35px;
+  }
+  .nosotros .nuestroObjetivo .div2 {
+    width: 200px;
+  }
+  .nosotros .nuestroObjetivo .div3 {
+    width: 269px;
+    height: 208px;
+  }
+  .nosotros .nosotrosImg {
+    width: 680px;
+    height: 366px;
+  }
+  .nosotros .nosotrosImg img {
+    top: 50%;
+    bottom: 50%;
+    -webkit-transform: translateY(-44%);
+            transform: translateY(-44%);
+  }
+  .nosotros .nosotrosImg div {
+    width: 621px;
+    height: 336px;
+  }
+  .nosotros .nosotrosImg div p {
+    padding: 47px 234px 47px 36px;
+  }
+  .cannabis-medicinal .banner {
+    height: 280px;
+    padding: 60px 208px 24px 91px;
+    background-image: url("../img/cannabis_fondo_tablet.jpg");
+  }
+  .cannabis-medicinal .banner h1 {
+    width: 372px;
+    height: 84px;
+    font-size: 33px;
+    line-height: 40px;
+    margin-bottom: 19px !important;
+  }
+  .cannabis-medicinal .banner h1 br {
+    display: none;
+  }
+  .cannabis-medicinal .banner p {
+    width: 445px;
+    height: 72px;
+  }
+  .cannabis-medicinal .tituloHistoria {
+    margin: 40px 0 31px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cannabis-medicinal .tituloHistoria .titulo {
+    width: 235px;
+  }
+  .cannabis-medicinal .tituloHistoria .texto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 23px 58px;
+    gap: 30px;
+    width: 445px;
+    height: 240px;
+  }
+  .cannabis-medicinal .tituloHistoria .texto .inactivo {
+    display: inline;
+  }
+  .cannabis-medicinal .tituloHistoria .texto p {
+    width: auto;
+    height: auto;
+  }
+  .cannabis-medicinal .historia {
+    padding: 0 32px;
+    gap: 30px;
+  }
+  .cannabis-medicinal .historia .inactivo {
+    display: none;
+  }
+  .cannabis-medicinal .productos {
+    gap: 40px;
+    padding: 0 120px;
+    margin: 48px 0 96px;
+  }
+  .cannabis-medicinal .productos div img {
+    width: 152px;
+    height: 152px;
+  }
+  .cannabis-medicinal .productos div div {
+    width: 332px;
+  }
+  .cannabis-medicinal .mensaje {
+    margin: 0 32px 96px;
+  }
+  .cannabis-medicinal .mensaje h4 {
+    width: 562px;
+    height: 124px;
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .lineaProductos {
+    padding: 72px 30px 309px 30px;
+    gap: 56px;
+  }
+  .lineaProductos .descripcion {
+    gap: 64px;
+  }
+  .lineaProductos .descripcion p {
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-top: 64px !important;
+  }
+  .lineaProductos .productos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    width: 211px;
+  }
+  .lineaProductos .productos div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 23px;
+    width: 211px;
+  }
+  .lineaProductos .productos div p {
+    font-size: 15px;
+    line-height: 24px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .lineaProductos .productos div .inactivo {
+    padding: 12px 32px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1030px) {
+  .inicio .carousel {
+    height: 648px;
+  }
+  .inicio .carousel .carousel-indicators {
+    margin-bottom: 3rem;
+  }
+  .inicio .carousel .carruselNext, .inicio .carousel .carruselPrev {
+    display: block;
+  }
+  .inicio .carousel .carousel-inner h1 {
+    font-size: 68px;
+    font-weight: 800;
+  }
+  .inicio .carousel .carousel-inner .button {
+    font-size: 16px;
+  }
+  .inicio .carousel .carousel-inner .w-100 {
+    height: 648px;
+  }
+  .inicio .carousel .carousel-inner .carousel-item {
+    height: 648px;
+  }
+  .inicio .carousel .carousel-inner .carousel-caption {
+    bottom: 6.25rem;
+    left: 13%;
+  }
+  .inicio .carousel .carousel-inner .carrusel1 .w-100 {
+    width: 100% !important;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .inicio .carousel .carousel-inner .carrusel2 .w-100 {
+    bottom: -95px;
+  }
+  .inicio .carousel .carousel-inner .carrusel2 .carousel-caption {
+    width: 500px;
+    bottom: 14.25rem;
+    left: 116px;
+  }
+  .inicio .carousel .carousel-inner .carrusel2 .carousel-caption h1 {
+    text-align: start;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .w-100 {
+    bottom: -95px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1200px;
+    height: 480px;
+    padding: 57px 89px 55px 119px;
+    bottom: 6.25rem;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption h2 {
+    text-align: start;
+    font-size: 68px;
+    width: 386px;
+    font-weight: bolder;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel {
+    width: 495px;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel p {
+    font-size: 30px;
+    line-height: 56px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel p .numero {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  .inicio .carousel .carousel-inner .carrusel3 .carousel-caption .textoCarrusel p b {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  .inicio .insignias {
+    padding: 56px 120px;
+    gap: 106px;
+  }
+  .inicio .insignias .icons {
+    gap: 29px;
+  }
+  .inicio .insignias .icons svg {
+    width: 104px;
+    height: 104px;
+  }
+  .inicio .insignias .text {
+    width: 542px;
+  }
+  .inicio .insignias .text p {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .inicio .nuestrasLineas {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 63px;
+    gap: 96px;
+  }
+  .inicio .nuestrasLineas h2 {
+    font-size: 27px;
+  }
+  .inicio .nuestrasLineas .containerProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 160px;
+  }
+  .inicio .nuestrasLineas .containerProductos div {
+    -webkit-animation-name: unset;
+            animation-name: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inicio .nuestrasLineas .containerProductos div h3 {
+    font-size: 27px;
+  }
+  .inicio .nuestrasLineas .containerProductos div img {
+    width: 250px;
+    height: 250px;
+    -webkit-transition: 450ms ease-in-out;
+    transition: 450ms ease-in-out;
+  }
+  .inicio .nuestrasLineas .containerProductos div img:hover {
+    -webkit-filter: drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.2)) drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.15));
+            filter: drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.2)) drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.15));
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .inicio .nuestrasLineas .containerProductos :nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inicio .testimonios {
+    background-image: url("../img/fondo_testimonios_desktop.jpg");
+  }
+  .inicio .testimonios .carousel {
+    width: 590px;
+    height: 352px;
+  }
+  .inicio .testimonios .carousel .carousel-indicators {
+    margin-bottom: 1rem;
+  }
+  .inicio .testimonios .carousel .carousel-inner h3 {
+    font-size: 27px;
+    margin-bottom: 16px;
+  }
+  .inicio .testimonios .carousel .carousel-inner .carousel-item {
+    width: 100%;
+    height: 352px;
+    padding: 39px;
+  }
+  .inicio .testimonios .carousel .carousel-inner .carousel-item p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .inicio .testimonios .carousel .carousel-inner .carousel-item div {
+    gap: 23px;
+  }
+  .inicio .testimonios .contenedor .textoTestimonios {
+    background-image: url("../img/fondo_texto_desktop.png");
+    width: 590px;
+    height: 352px;
+  }
+  .inicio .testimonios h2 {
+    width: 370px;
+  }
+  .inicio .comoTrabajamos {
+    padding: 173px 91px 180px 91px;
+  }
+  .inicio .comoTrabajamos h3 {
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .inicio .comoTrabajamos .containerIconos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 16px;
+  }
+  .inicio .comoTrabajamos .containerIconos div {
+    width: 172px;
+    gap: 19px;
+  }
+  .inicio .comoTrabajamos .containerIconos div img {
+    width: 35px;
+    height: 45px;
+  }
+  .inicio .comoTrabajamos .containerIconos div p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .inicio .comunidad {
+    gap: 29px;
+    padding: 39px 12px 64px 12px;
+  }
+  .inicio .comunidad h3 {
+    color: #354044;
+    font-size: 27px;
+  }
+  .inicio .comunidad .containerRedes {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .inicio .comunidad .containerRedes div {
+    position: relative;
+  }
+  .inicio .comunidad .containerRedes div:hover::after, .inicio .comunidad .containerRedes div:hover::before {
+    opacity: 100;
+  }
+  .inicio .comunidad .containerRedes div img {
+    width: 285px;
+    height: 232px;
+  }
+  .inicio .comunidad .containerRedes div::after {
+    content: 'Descubrí\Anuestros\Aposteos';
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(40, 82, 75, 0.8);
+    white-space: pre;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 64px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    color: #F3EEE9;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  .inicio .comunidad .containerRedes div::before {
+    content: url("../img/flecha.svg");
+    color: #F3EEE9;
+    position: absolute;
+    left: 72%;
+    top: 50%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+  .inicio .comunidad .containerRedes .posteosGeneral {
+    display: none;
+  }
+  .inicio .comunidad .containerRedes .imagen svg {
+    top: 14px;
+    right: 15px;
+  }
+  .nosotros {
+    padding: 80px 120px 176px 120px;
+    text-align: start;
+  }
+  .nosotros p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .nosotros .nuestraFilosofia {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 1200px;
+    height: 176px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+  }
+  .nosotros .nuestraFilosofia h1 {
+    font-size: 68px;
+    line-height: 80px;
+    width: 387px;
+    height: 160px;
+  }
+  .nosotros .nuestraFilosofia p {
+    width: 793px;
+    height: 128px;
+  }
+  .nosotros .nuestroObjetivo {
+    margin-top: 88px;
+    gap: 20px;
+  }
+  .nosotros .nuestroObjetivo .div1 {
+    padding: 56px 50px;
+    width: 386px;
+    height: 240px;
+  }
+  .nosotros .nuestroObjetivo .div1 p {
+    width: 285px;
+    height: 128px;
+  }
+  .nosotros .nuestroObjetivo .div2 {
+    width: 386px;
+    height: 240px;
+  }
+  .nosotros .nuestroObjetivo .div2 h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .nosotros .nuestroObjetivo .div3 {
+    width: 386px;
+    height: 240px;
+  }
+  .nosotros .nosotrosImg {
+    height: 368px;
+    width: 1200px;
+    margin-top: 72px;
+  }
+  .nosotros .nosotrosImg div {
+    width: 885px;
+    height: 368px;
+  }
+  .nosotros .nosotrosImg div p {
+    padding: 56px 155px 56px 52px;
+  }
+  .nosotros .nosotrosImg img {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .cannabis-medicinal .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 376px;
+    padding: 112px 120px 32px 120px;
+    background-image: url("../img/cannabis_fondo_desktop.jpg");
+  }
+  .cannabis-medicinal .banner h1 {
+    text-align: center;
+    width: 1200px;
+    height: 88px;
+    font-size: 68px;
+    line-height: 80px;
+    margin-bottom: 48px !important;
+  }
+  .cannabis-medicinal .banner p {
+    width: 691px;
+    height: 96px;
+    font-size: 22px;
+    text-align: center;
+  }
+  .cannabis-medicinal .tituloHistoria {
+    margin: 80px 120px 56px;
+  }
+  .cannabis-medicinal .tituloHistoria .titulo {
+    width: 305px;
+    height: 256px;
+  }
+  .cannabis-medicinal .tituloHistoria .titulo h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .cannabis-medicinal .tituloHistoria .texto {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 32px 102px;
+    gap: 30px;
+    width: 895px;
+    height: 256px;
+  }
+  .cannabis-medicinal .tituloHistoria .texto .inactivo {
+    display: inline;
+  }
+  .cannabis-medicinal .tituloHistoria .texto p {
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .cannabis-medicinal .historia {
+    padding: 0 120px;
+  }
+  .cannabis-medicinal .historia p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .cannabis-medicinal .productos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 24px;
+    max-width: 1198px;
+    margin: 56px auto 80px auto;
+    padding: 0;
+  }
+  .cannabis-medicinal .productos div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .cannabis-medicinal .productos div img {
+    width: 200px;
+    height: 200px;
+  }
+  .cannabis-medicinal .productos div div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 25px;
+    width: 386px;
+  }
+  .cannabis-medicinal .productos div div h4 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .cannabis-medicinal .productos div div p {
+    text-align: center;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .cannabis-medicinal .productos .invertido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cannabis-medicinal .mensaje {
+    margin: 0 122px 96px;
+  }
+  .cannabis-medicinal .mensaje h4 {
+    width: 993px;
+    height: 167px;
+    font-size: 30px;
+    line-height: 56px;
+    font-weight: 400;
+  }
+  .lineaProductos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 130px 120px 106px 120px;
+    gap: 121px;
+  }
+  .lineaProductos .descripcion h1 {
+    font-size: 68px;
+    line-height: 80px;
+  }
+  .lineaProductos .descripcion p {
+    font-size: 40px;
+    line-height: 56px;
+    margin-top: 166px !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 0.005em;
+    width: 793px;
+  }
+  .lineaProductos .descripcion p br {
+    display: inline;
+  }
+  .lineaProductos .descripcion .textoJabones {
+    margin-bottom: 70px !important;
+  }
+  .lineaProductos .productos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto 0 0 0;
+    width: 285px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lineaProductos .productos div {
+    gap: 13px;
+    position: relative;
+    width: 100%;
+  }
+  .lineaProductos .productos div p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .lineaProductos .productos div .inactivo {
+    display: none;
+  }
+  .lineaProductos .productos div a {
+    all: unset;
+    cursor: pointer;
+    width: 285px;
+  }
+  .lineaProductos .productos div div {
+    position: relative;
+  }
+  .lineaProductos .productos div div::after {
+    content: 'VER PRODUCTO';
+    font-size: 22px;
+    font-weight: 700;
+    color: #F3EEE9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(40, 82, 75, 0.8);
+    opacity: 0;
+    -webkit-transition: 150ms ease-out;
+    transition: 150ms ease-out;
+  }
+  .lineaProductos .productos div div:hover::after {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+button,
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 226px;
+  margin: 0 auto;
+}
+
+body p {
+  color: #0E301A;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  font-weight: 400;
 }
 /*# sourceMappingURL=estilo.css.map */
