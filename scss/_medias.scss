@@ -1,0 +1,980 @@
+@media (min-width: $breakpoint-tablet) {
+  .inicio {
+    .carousel {
+      .carousel-inner {
+        h1 {
+          text-align: start;
+        }
+
+        .w-100 {
+          width: auto !important;
+        }
+
+        .carousel-caption {
+          right: unset;
+          left: 10%;
+        }
+        .carrusel1 {
+          .w-100 {
+            width: 100% !important;
+            height: auto;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .carrusel2 {
+          align-items: center;
+          .w-100 {
+            width: 100% !important;
+            height: auto;
+            right: 0;
+            bottom: -45px;
+          }
+          .carousel-caption {
+            bottom: 11.25rem;
+            left: 38px;
+            transform: unset;
+            h1 {
+              text-align: center;
+            }
+          }
+        }
+        .carrusel3 {
+          .w-100 {
+            width: 100% !important;
+            height: auto;
+            right: 0;
+            bottom: -45px;
+          }
+          .carousel-caption {
+            flex-direction: row;
+            justify-content: center;
+            width: 680px;
+            height: 336px;
+            padding: 40px 58px 33px 58px;
+            gap: 111px;
+            h2 {
+              text-align: start;
+              font-size: 33px;
+              font-weight: 800;
+            }
+            .textoCarrusel {
+              justify-content: center;
+              width: 485px;
+              height: 256px;
+              gap: 25px;
+              p {
+                font-size: 23px;
+                font-weight: 500;
+                line-height: 32px;
+                .numero {
+                  font-size: 33px;
+                  line-height: 40px;
+                  font-weight: 800;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .insignias {
+      flex-direction: row-reverse;
+      justify-content: center;
+      padding: 69px 33px;
+      gap: 24px;
+    }
+
+    .nuestrasLineas {
+      padding: 73px;
+      gap: 42px;
+
+      .containerProductos {
+        div {
+          gap: 40px;
+          img {
+            width: 200px;
+            height: 200px;
+          }
+
+          h3 {
+            font-size: 33px;
+          }
+        }
+      }
+    }
+
+    .testimonios {
+      background-image: url("../img/fondo_testimonios_tablet.jpg");
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+      padding: 72px 30px;
+
+      .carousel {
+        height: 312px;
+      }
+
+      .h2Verde {
+        display: none;
+      }
+
+      h2 {
+        font-size: 33px;
+        font-weight: 800;
+        line-height: 40px;
+      }
+
+      .contenedor {
+        all: unset;
+        box-shadow: 0px 4px 16px rgba(40, 82, 75, 0.1);
+        .textoTestimonios {
+          background-image: url("../img/fondo_texto_tablet.png");
+          width: 328px;
+          height: 312px;
+        }
+      }
+    }
+
+    .comoTrabajamos {
+      background-image: unset;
+      background-color: $blanco;
+      padding: 100px 91px;
+      gap: 57px;
+
+      h3 {
+        font-size: 19px;
+      }
+
+      .containerIconos {
+        flex-direction: row;
+        gap: 8px;
+
+        div {
+          width: 106px;
+          gap: 15px;
+
+          img {
+            width: 24px;
+            height: 31px;
+          }
+        }
+      }
+    }
+
+    .comunidad {
+      margin: unset;
+      align-items: center;
+      gap: 36px;
+
+      h3 {
+        font-size: 19px;
+        font-weight: 600;
+        width: auto;
+      }
+
+      .containerRedes {
+        width: auto;
+
+        .posteosInstagram,
+        .posteosFacebook {
+          display: none;
+          width: 129px;
+          height: 104px;
+        }
+
+        .inactivo {
+          display: block;
+        }
+
+        .posteosGeneral {
+          display: flex;
+          width: 129px;
+          height: 104px;
+
+          svg {
+            width: 18px;
+          }
+        }
+
+        img {
+          width: 129px;
+          height: 104px;
+        }
+      }
+    }
+  }
+
+  .nosotros {
+    padding: 56px 32px 96px 32px;
+
+    .nuestraFilosofia {
+      width: 680px;
+      height: 184px;
+
+      h1 {
+        width: 157px;
+        height: 80px;
+        font-size: 33px;
+        line-height: 40px;
+      }
+
+      p {
+        width: 680px;
+        height: 73px;
+      }
+    }
+
+    .nuestroObjetivo {
+      flex-wrap: nowrap;
+
+      .div1 {
+        width: 211px;
+        height: 208px;
+        padding: 31px 35px;
+      }
+
+      .div2 {
+        width: 200px;
+      }
+
+      .div3 {
+        width: 269px;
+        height: 208px;
+      }
+    }
+
+    .nosotrosImg {
+      width: 680px;
+      height: 366px;
+
+      img {
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-44%);
+      }
+
+      div {
+        width: 621px;
+        height: 336px;
+
+        p {
+          padding: 47px 234px 47px 36px;
+        }
+      }
+    }
+  }
+
+  .cannabis-medicinal {
+    .banner {
+      height: 280px;
+      padding: 60px 208px 24px 91px;
+      background-image: url("../img/cannabis_fondo_tablet.jpg");
+
+      h1 {
+        width: 372px;
+        height: 84px;
+        font-size: 33px;
+        line-height: 40px;
+        margin-bottom: 19px !important;
+
+        br {
+          display: none;
+        }
+      }
+
+      p {
+        width: 445px;
+        height: 72px;
+      }
+    }
+
+    .tituloHistoria {
+      margin: 40px 0 31px;
+      justify-content: center;
+
+      .titulo {
+        width: 235px;
+      }
+
+      .texto {
+        @include flex-column;
+        padding: 23px 58px;
+        gap: 30px;
+        width: 445px;
+        height: 240px;
+
+        .inactivo {
+          display: inline;
+        }
+
+        p {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+
+    .historia {
+      padding: 0 32px;
+      gap: 30px;
+
+      .inactivo {
+        display: none;
+      }
+    }
+
+    .productos {
+      gap: 40px;
+      padding: 0 120px;
+      margin: 48px 0 96px;
+
+      div {
+        img {
+          width: 152px;
+          height: 152px;
+        }
+
+        div {
+          width: 332px;
+        }
+      }
+    }
+
+    .mensaje {
+      margin: 0 32px 96px;
+
+      h4 {
+        width: 562px;
+        height: 124px;
+        font-size: 23px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .lineaProductos {
+    padding: 72px 30px 309px 30px;
+    gap: 56px;
+    .descripcion {
+      gap: 64px;
+      p {
+        font-size: 23px;
+        line-height: 32px;
+        font-weight: 500;
+        margin-top: 64px !important;
+      }
+    }
+    .productos {
+      justify-content: center;
+      gap: 24px;
+      width: 211px;
+      div {
+        align-items: center;
+        gap: 23px;
+        width: 211px;
+        p {
+          font-size: 15px;
+          line-height: 24px;
+          align-self: flex-start;
+        }
+        .inactivo {
+          padding: 12px 32px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .inicio {
+    .carousel {
+      height: 648px;
+      .carousel-indicators {
+        margin-bottom: 3rem;
+      }
+
+      .carruselNext,
+      .carruselPrev {
+        display: block;
+      }
+
+      .carousel-inner {
+        h1 {
+          font-size: 68px;
+          font-weight: 800;
+        }
+
+        .button {
+          font-size: 16px;
+        }
+
+        .w-100 {
+          height: 648px;
+        }
+        .carousel-item {
+          height: 648px;
+        }
+        .carousel-caption {
+          bottom: 6.25rem;
+          left: 13%;
+        }
+        .carrusel1 {
+          .w-100 {
+            width: 100% !important;
+            height: auto;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .carrusel2 {
+          .w-100 {
+            bottom: -95px;
+          }
+          .carousel-caption {
+            width: 500px;
+            bottom: 14.25rem;
+            left: 116px;
+            h1 {
+              text-align: start;
+            }
+          }
+        }
+        .carrusel3 {
+          .w-100 {
+            bottom: -95px;
+          }
+          .carousel-caption {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1200px;
+            height: 480px;
+            padding: 57px 89px 55px 119px;
+            bottom: 6.25rem;
+
+            h2 {
+              text-align: start;
+              font-size: 68px;
+              width: 386px;
+              font-weight: bolder;
+            }
+
+            .textoCarrusel {
+              width: 495px;
+              height: auto;
+              justify-content: center;
+              gap: 30px;
+
+              p {
+                font-size: 30px;
+                line-height: 56px;
+
+                .numero {
+                  font-size: 30px;
+                  font-weight: 700;
+                  line-height: 56px;
+                }
+
+                b {
+                  font-size: 30px;
+                  font-weight: 700;
+                  line-height: 56px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .insignias {
+      padding: 56px 120px;
+      gap: 106px;
+
+      .icons {
+        gap: 29px;
+
+        svg {
+          width: 104px;
+          height: 104px;
+        }
+      }
+
+      .text {
+        width: 542px;
+
+        p {
+          font-size: 22px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .nuestrasLineas {
+      align-items: center;
+      padding: 63px;
+      gap: 96px;
+      h2 {
+        font-size: 27px;
+      }
+
+      .containerProductos {
+        @include flex-row;
+        gap: 160px;
+
+        div {
+          animation-name: unset;
+          flex-direction: column;
+
+          h3 {
+            font-size: 27px;
+          }
+
+          img {
+            width: 250px;
+            height: 250px;
+            transition: 450ms ease-in-out;
+            &:hover {
+              filter: drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.2))
+                drop-shadow(0px 20px 50px rgba(40, 82, 75, 0.15));
+              transform: translateY(-10px);
+            }
+          }
+        }
+
+        :nth-child(2) {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .testimonios {
+      background-image: url("../img/fondo_testimonios_desktop.jpg");
+
+      .carousel {
+        .carousel-indicators {
+          margin-bottom: 1rem;
+        }
+
+        width: 590px;
+        height: 352px;
+
+        .carousel-inner {
+          h3 {
+            font-size: 27px;
+            margin-bottom: 16px;
+          }
+
+          .carousel-item {
+            width: 100%;
+            height: 352px;
+            padding: 39px;
+
+            p {
+              font-size: 22px;
+              font-weight: 400;
+              line-height: 32px;
+            }
+
+            div {
+              gap: 23px;
+            }
+          }
+        }
+      }
+
+      .contenedor {
+        .textoTestimonios {
+          background-image: url("../img/fondo_texto_desktop.png");
+          width: 590px;
+          height: 352px;
+        }
+      }
+
+      h2 {
+        width: 370px;
+      }
+    }
+
+    .comoTrabajamos {
+      padding: 173px 91px 180px 91px;
+      h3 {
+        font-size: 27px;
+        font-weight: 600;
+      }
+
+      .containerIconos {
+        flex-direction: row;
+        gap: 16px;
+
+        div {
+          width: 172px;
+          gap: 19px;
+
+          img {
+            width: 35px;
+            height: 45px;
+          }
+
+          p {
+            font-size: 20px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .comunidad {
+      gap: 29px;
+      padding: 39px 12px 64px 12px;
+
+      h3 {
+        color: #354044;
+        font-size: 27px;
+      }
+
+      .containerRedes {
+        flex-wrap: nowrap;
+
+        div {
+          &:hover {
+            &::after,
+            &::before {
+              opacity: 100;
+            }
+          }
+
+          position: relative;
+
+          img {
+            width: 285px;
+            height: 232px;
+          }
+
+          &::after {
+            content: "Descubrí\Anuestros\Aposteos";
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: rgba(40, 82, 75, 0.8);
+            white-space: pre;
+            display: flex;
+            padding-left: 64px;
+            align-items: center;
+            justify-content: start;
+            color: $terciarioClaro;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 0.4s ease-in-out;
+          }
+
+          &::before {
+            content: url("../img/flecha.svg");
+            color: $terciarioClaro;
+            position: absolute;
+            left: 72%;
+            top: 50%;
+            z-index: 1;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 0.4s ease-in-out;
+          }
+        }
+
+        .posteosGeneral {
+          display: none;
+        }
+
+        .imagen {
+          svg {
+            top: 14px;
+            right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .nosotros {
+    padding: 80px 120px 176px 120px;
+    text-align: start;
+
+    p {
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    .nuestraFilosofia {
+      align-items: center;
+      width: 1200px;
+      height: 176px;
+      flex-direction: row;
+      gap: 20px;
+
+      h1 {
+        font-size: 68px;
+        line-height: 80px;
+        width: 387px;
+        height: 160px;
+      }
+
+      p {
+        width: 793px;
+        height: 128px;
+      }
+    }
+
+    .nuestroObjetivo {
+      margin-top: 88px;
+      gap: 20px;
+
+      .div1 {
+        padding: 56px 50px;
+        width: 386px;
+        height: 240px;
+
+        p {
+          width: 285px;
+          height: 128px;
+        }
+      }
+
+      .div2 {
+        width: 386px;
+        height: 240px;
+
+        h2 {
+          font-size: 40px;
+          font-weight: 800;
+        }
+      }
+
+      .div3 {
+        width: 386px;
+        height: 240px;
+      }
+    }
+
+    .nosotrosImg {
+      height: 368px;
+      width: 1200px;
+      margin-top: 72px;
+
+      div {
+        width: 885px;
+        height: 368px;
+
+        p {
+          padding: 56px 155px 56px 52px;
+        }
+      }
+
+      img {
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .cannabis-medicinal {
+    .banner {
+      @include flex-column;
+      align-items: center;
+      height: 376px;
+      padding: 112px 120px 32px 120px;
+      background-image: url("../img/cannabis_fondo_desktop.jpg");
+
+      h1 {
+        text-align: center;
+        width: 1200px;
+        height: 88px;
+        font-size: 68px;
+        line-height: 80px;
+        margin-bottom: 48px !important;
+      }
+
+      p {
+        width: 691px;
+        height: 96px;
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+
+    .tituloHistoria {
+      margin: 80px 120px 56px;
+
+      .titulo {
+        width: 305px;
+        height: 256px;
+
+        h2 {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+
+      .texto {
+        justify-content: center;
+        padding: 32px 102px;
+        gap: 30px;
+        width: 895px;
+        height: 256px;
+
+        .inactivo {
+          display: inline;
+        }
+
+        p {
+          width: auto;
+          height: auto;
+          font-size: 22px;
+          line-height: 32px;
+        }
+      }
+    }
+
+    .historia {
+      padding: 0 120px;
+
+      p {
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+
+    .productos {
+      flex-direction: row;
+      gap: 24px;
+      max-width: 1198px;
+      margin: 56px auto 80px auto;
+      padding: 0;
+
+      div {
+        flex-direction: column;
+        gap: 30px;
+
+        img {
+          width: 200px;
+          height: 200px;
+        }
+
+        div {
+          align-items: center;
+          gap: 25px;
+          width: 386px;
+
+          h4 {
+            font-size: 27px;
+            line-height: 32px;
+          }
+
+          p {
+            text-align: center;
+            font-size: 22px;
+            line-height: 32px;
+          }
+        }
+      }
+
+      .invertido {
+        flex-direction: column;
+      }
+    }
+
+    .mensaje {
+      margin: 0 122px 96px;
+
+      h4 {
+        width: 993px;
+        height: 167px;
+        font-size: 30px;
+        line-height: 56px;
+        font-weight: 400;
+      }
+    }
+  }
+  .lineaProductos {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 130px 120px 106px 120px;
+    gap: 121px;
+    .descripcion {
+      h1 {
+        font-size: 68px;
+        line-height: 80px;
+      }
+      p {
+        font-size: 40px;
+        line-height: 56px;
+        margin-top: 166px !important;
+        margin-bottom: 20px !important;
+        letter-spacing: 0.005em;
+        width: 793px;
+        br {
+          display: inline;
+        }
+      }
+      .textoJabones {
+        margin-bottom: 70px !important;
+      }
+    }
+    .productos {
+      flex-direction: column;
+      margin: auto 0 0 0;
+      width: 285px;
+      align-items: center;
+      div {
+        gap: 13px;
+        position: relative;
+        width: 100%;
+        p {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .inactivo {
+          display: none;
+        }
+        a {
+          all: unset;
+          cursor: pointer;
+          width: 285px;
+        }
+        div {
+          position: relative;
+          &::after {
+            content: "VER PRODUCTO";
+            font-size: 22px;
+            font-weight: 700;
+            color: $terciarioClaro;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 312px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(40, 82, 75, 0.8);
+            opacity: 0;
+            transition: 150ms ease-out;
+          }
+          &:hover {
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
