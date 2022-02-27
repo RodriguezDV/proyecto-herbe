@@ -995,7 +995,11 @@
     -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
   }
-  .headerEstilos img {
+  .headerEstilos a {
+    width: 60px;
+    height: 60px;
+  }
+  .headerEstilos a img {
     width: 40px;
     height: 40px;
     margin: 10px;
@@ -2041,7 +2045,7 @@
     width: fit-content;
     font-size: 22px;
     color: #0e301a;
-    margin: 75px 120px 21px 120px;
+    margin: 75px 120px 21px 25px;
     font-weight: 600;
     text-shadow: 1px 1px 4px rgba(105, 105, 105, 0.233);
     -ms-flex-item-align: start;
@@ -2192,6 +2196,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .sectionCarrusel div .btnProducto a {
+    text-decoration: none;
+  }
   .sectionCarrusel div .btnProducto a button {
     width: 143px;
     height: 48px;
@@ -2202,6 +2209,7 @@
     margin: 35px 0 35px 0;
     font-weight: 300;
     font-size: 13px;
+    text-align: center;
   }
   .carousel-control-prev span {
     width: 24px;
@@ -2437,6 +2445,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .sectionCarrusel div .btnProducto a {
+    text-decoration: none;
+  }
   .sectionCarrusel div .btnProducto a button {
     width: 143px;
     height: 48px;
@@ -2447,6 +2458,7 @@
     margin: 60px 0 0 0;
     font-weight: 300;
     font-size: 13px;
+    text-align: center;
   }
   .sectionCarrusel .tituloInfo {
     position: relative;
@@ -2693,6 +2705,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .sectionCarrusel div .btnProducto a {
+    text-decoration: none;
+  }
   .sectionCarrusel div .btnProducto a button {
     width: 143px;
     height: 48px;
@@ -2703,6 +2718,9 @@
     margin: 60px 0 0 0;
     font-weight: 300;
     font-size: 13px;
+    text-align: center;
+    -webkit-transition: 150ms;
+    transition: 150ms;
   }
   .sectionCarrusel div .btnProducto a button:hover {
     color: black;
@@ -2957,6 +2975,9 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .sectionCarrusel div .btnProducto a {
+    text-decoration: none;
+  }
   .sectionCarrusel div .btnProducto a button {
     width: 161px;
     height: 48px;
@@ -2967,6 +2988,9 @@
     margin: 60px 0 0 0;
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
+    -webkit-transition: 150ms;
+    transition: 150ms;
   }
   .sectionCarrusel div .btnProducto a button:hover {
     color: black;
@@ -4184,7 +4208,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 312px;
     position: absolute;
     top: 0;
     left: 0;
