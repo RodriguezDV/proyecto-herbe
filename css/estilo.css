@@ -1,0 +1,1885 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 226px;
+}
+
+@media only screen and (max-width: 390px) {
+  .headerEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f3eee9;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 60px;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
+  }
+  .headerEstilos img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  .headerEstilos ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .headerEstilos ul a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: small;
+    color: #0e301a;
+  }
+  .headerEstilos ul .pagActual {
+    font-weight: bold;
+  }
+  .footerEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    background-image: url(../img/footer-fondo-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    color: #ebe3da;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 15px;
+    position: absolute;
+    bottom: 0;
+  }
+  .footerEstilos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerEstilos div h3 {
+    font-size: 13px;
+    font-weight: lighter;
+    margin: 15px;
+  }
+  .footerEstilos div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .footerEstilos div div a {
+    margin-right: 20px;
+  }
+  .footerEstilos div div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 15px;
+  }
+  .footerEstilos div div div h4 {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px;
+    margin: 0;
+  }
+  .footerEstilos div div div a {
+    text-decoration: none;
+    color: #ebe3da;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 1439px) {
+  .headerEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f3eee9;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 64px;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
+  }
+  .headerEstilos a {
+    width: 49px;
+    height: 49px;
+  }
+  .headerEstilos a img {
+    width: 49px;
+    height: 49px;
+    position: relative;
+    left: 32px;
+  }
+  .headerEstilos a img:hover {
+    width: 51px;
+    height: 51px;
+  }
+  .headerEstilos ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    right: 32px;
+    width: 200px;
+    margin: 0;
+  }
+  .headerEstilos ul a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #0e301a;
+  }
+  .headerEstilos ul a:hover {
+    font-weight: 700;
+  }
+  .headerEstilos ul .pagActual {
+    font-weight: bold;
+  }
+  .headerEstilos ul .pagActual:hover {
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .footerEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    background-image: url(../img/footer-fondo-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    color: #ebe3da;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 175px;
+    padding-top: 25px;
+  }
+  .footerEstilos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerEstilos div h3 {
+    font-size: 13px;
+    font-weight: lighter;
+    margin: 20px 0 15px 36px;
+  }
+  .footerEstilos div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .footerEstilos div div a {
+    margin-right: 20px;
+  }
+  .footerEstilos div div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 36px;
+  }
+  .footerEstilos div div div h4 {
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px;
+    margin: 0;
+  }
+  .footerEstilos div div div a {
+    text-decoration: none;
+    color: #ebe3da;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .headerEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f3eee9;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 88px;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.123);
+  }
+  .headerEstilos img {
+    width: 49px;
+    height: 49px;
+    margin: 0px;
+    position: relative;
+    top: 0px;
+    left: 119px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .headerEstilos img:hover {
+    width: 55px;
+    height: 55px;
+  }
+  .headerEstilos ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    right: 100px;
+    width: 320px;
+    margin: 0;
+  }
+  .headerEstilos ul a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #0e301a;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .headerEstilos ul a:hover {
+    font-weight: 700;
+  }
+  .headerEstilos ul .pagActual {
+    font-weight: bold;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .headerEstilos ul .pagActual:hover {
+    font-size: 23px;
+    text-decoration: none;
+  }
+  .footerEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    background-image: url(../img/footer-fondo-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 256px;
+    color: #ebe3da;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 175px;
+    width: 100%;
+  }
+  .footerEstilos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerEstilos div h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 53px 0 20px 120px;
+  }
+  .footerEstilos div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .footerEstilos div div a {
+    margin-right: 120px;
+  }
+  .footerEstilos div div a svg {
+    width: 31px;
+    height: 31px;
+  }
+  .footerEstilos div div a .facebookIconoWidth {
+    width: 32px;
+    height: 32px;
+  }
+  .footerEstilos div div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: 120px;
+    padding: 7px 0;
+  }
+  .footerEstilos div div div svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 5px;
+  }
+  .footerEstilos div div div h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+  }
+  .footerEstilos div div div a {
+    text-decoration: none;
+    color: #ebe3da;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mainEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #0e301a;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .mainEstilos h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 15px;
+    color: #0e301a;
+    margin: 51px 0 21px 18px;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(105, 105, 105, 0.233);
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mainEstilos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 350px;
+    margin: 0 8px 0 8px;
+  }
+  .mainEstilos div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: flex-start;
+    max-width: 156px;
+    margin: 8px;
+  }
+  .mainEstilos div div a {
+    text-decoration: none;
+    color: #0e301a;
+  }
+  .mainEstilos div div a .hoverDiv {
+    margin: 0;
+  }
+  .mainEstilos div div a .hoverDiv img {
+    width: 156px;
+    height: 176px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mainEstilos div div a .hoverDiv div {
+    display: none;
+  }
+  .mainEstilos div div a h2 {
+    font-size: 0.75em;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 22px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 950px) {
+  .mainEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #0e301a;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .mainEstilos h1 {
+    font-size: 15px;
+    color: #0e301a;
+    margin: 75px 0 21px 32px;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(105, 105, 105, 0.233);
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mainEstilos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: flex-start;
+    max-width: 750px;
+  }
+  .mainEstilos div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: flex-start;
+    max-width: 211px;
+    margin: 14px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mainEstilos div div a {
+    text-decoration: none;
+    color: #0e301a;
+  }
+  .mainEstilos div div a .hoverDiv {
+    margin: 0;
+    width: 100%;
+  }
+  .mainEstilos div div a .hoverDiv img {
+    width: 100%;
+    height: 272px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mainEstilos div div a .hoverDiv div {
+    display: none;
+  }
+  .mainEstilos div div a h2 {
+    font-size: 0.95em;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 22px;
+  }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1439px) {
+  .mainEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #0e301a;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .mainEstilos h1 {
+    font-size: 15px;
+    color: #0e301a;
+    margin: 75px 0 21px 32px;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(105, 105, 105, 0.233);
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mainEstilos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 12px 0 12px;
+    max-width: 1000px;
+  }
+  .mainEstilos div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: flex-start;
+    max-width: 211px;
+    margin: 14px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mainEstilos div div a {
+    text-decoration: none;
+    color: #0e301a;
+  }
+  .mainEstilos div div a .hoverDiv {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .mainEstilos div div a .hoverDiv img {
+    display: block;
+    width: 100%;
+    height: 272px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mainEstilos div div a .hoverDiv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: #28524bcc;
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: 150ms;
+    transition: 150ms;
+  }
+  .mainEstilos div div a .hoverDiv div h3 {
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    margin: auto;
+    opacity: 0;
+  }
+  .mainEstilos div div a .hoverDiv div:hover {
+    opacity: 1;
+  }
+  .mainEstilos div div a .hoverDiv div:hover h3 {
+    opacity: 1;
+  }
+  .mainEstilos div div a h2 {
+    font-size: 0.95em;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 22px;
+  }
+  .mainEstilos div div a h2:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .mainEstilos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #0e301a;
+    width: 1300px;
+    margin: auto;
+  }
+  .mainEstilos h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 22px;
+    color: #0e301a;
+    margin: 75px 120px 21px 120px;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(105, 105, 105, 0.233);
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mainEstilos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 1250px;
+    margin: 20px 120px;
+  }
+  .mainEstilos div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: flex-start;
+    max-width: 285px;
+    margin: 0 20px 20px 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .mainEstilos div div a {
+    text-decoration: none;
+    color: #0e301a;
+  }
+  .mainEstilos div div a .hoverDiv {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .mainEstilos div div a .hoverDiv img {
+    display: block;
+    width: 100%;
+    height: 312px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mainEstilos div div a .hoverDiv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: #28524bcc;
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: 150ms;
+    transition: 150ms;
+  }
+  .mainEstilos div div a .hoverDiv div h3 {
+    font-weight: 700;
+    font-size: 22px;
+    position: relative;
+    margin: auto;
+    opacity: 0;
+  }
+  .mainEstilos div div a .hoverDiv div:hover {
+    opacity: 1;
+  }
+  .mainEstilos div div a .hoverDiv div:hover h3 {
+    opacity: 1;
+  }
+  .mainEstilos div div a h2 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 8px;
+    padding-bottom: 22px;
+  }
+  .mainEstilos div div a h2:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .sectionCarrusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 25px;
+  }
+  .sectionCarrusel .carousel {
+    width: 327px;
+  }
+  .sectionCarrusel div button {
+    color: white;
+  }
+  .sectionCarrusel div .carousel-indicators button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 9px;
+    background-color: rgba(255, 255, 255, 0.781);
+  }
+  .sectionCarrusel div .carousel-indicators button.active {
+    background-color: white;
+  }
+  .sectionCarrusel div div h1 {
+    color: #0e301a;
+    font-size: 19px;
+    text-align: left;
+    width: 242px;
+    font-weight: 600;
+  }
+  .sectionCarrusel div div ul {
+    display: none;
+  }
+  .sectionCarrusel div div div img {
+    margin: auto;
+    width: 242px;
+    height: 296px;
+  }
+  .sectionCarrusel div .btnProducto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionCarrusel div .btnProducto a button {
+    width: 143px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 35px 0 35px 0;
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .carousel-control-prev span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: -13px;
+  }
+  .carousel-control-next span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: 15px;
+  }
+  .tabContainer {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .tabContainer .tabs {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3rem;
+  }
+  .tabContainer .tabs li {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0e301a;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs li::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -33px;
+    width: 0%;
+    height: 4px;
+    background-color: #96aaa7;
+    -webkit-transition: width 0.8s ease;
+    transition: width 0.8s ease;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs .tabDesactivada {
+    cursor: default;
+    color: #0e301a4f;
+  }
+  .tabContainer .tabs li:nth-child(2) {
+    position: relative;
+    left: 5px;
+  }
+  .tabContainer .tabs li:nth-child(2)::after {
+    position: absolute;
+    left: -12px;
+  }
+  .tabContainer .tabs .activeTab::after {
+    width: 164px;
+  }
+  .tabContainer .containerInfo {
+    position: relative;
+    height: 432px;
+  }
+  .tabContainer .containerInfo .contenido {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 0 10px;
+  }
+  .tabContainer .containerInfo .contenido p,
+  .tabContainer .containerInfo .contenido li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #0e301a;
+    list-style: none;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints {
+    margin-top: 10px;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints li {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenido h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0e301a;
+    padding: 28px 0 18px 0;
+  }
+  .tabContainer .containerInfo .contenido div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenido div ul li {
+    color: #0e301a;
+    list-style: disc;
+    width: 125px;
+  }
+  .tabContainer .containerInfo .contenido div .liBalsamo li {
+    width: 150px;
+  }
+  .tabContainer .containerInfo .contenido div .liCombo li {
+    width: 300px;
+  }
+  .tabContainer .containerInfo .contenido div .listaDiferenteAncho li {
+    width: 149px;
+  }
+  .tabContainer .containerInfo .contenido .listaBulletPoints {
+    position: relative;
+    left: -15px;
+  }
+  .tabContainer .containerInfo .contenidoJabon h5 {
+    padding: 5px 0;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div svg {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div p {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo li {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  .tabContainer .containerInfo .contenido.activeContenido {
+    display: block;
+    -webkit-animation: fade 1s ease;
+            animation: fade 1s ease;
+  }
+  .tabContainer .containerCombos {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 730px) and (max-width: 900px) {
+  .sectionCarrusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 55px;
+  }
+  .sectionCarrusel .carousel {
+    width: 372px;
+  }
+  .sectionCarrusel div {
+    width: 269px;
+  }
+  .sectionCarrusel div .carousel-inner {
+    position: relative;
+    left: 55px;
+  }
+  .sectionCarrusel div button {
+    color: white;
+  }
+  .sectionCarrusel div .carousel-indicators button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 9px;
+    background-color: rgba(255, 255, 255, 0.781);
+  }
+  .sectionCarrusel div .carousel-indicators button.active {
+    background-color: white;
+  }
+  .sectionCarrusel div .carousel-indicators .indicator-combo {
+    position: relative;
+    top: -40px;
+  }
+  .sectionCarrusel div div h1 {
+    color: #0e301a;
+    font-size: 23px;
+    text-align: left;
+    width: 269px;
+    padding-top: 10px;
+    margin-bottom: 47px;
+  }
+  .sectionCarrusel div div ul li {
+    color: #0e301a;
+    font-size: 15px;
+    font-weight: 400;
+    width: 245px;
+    margin-bottom: 5px;
+  }
+  .sectionCarrusel div div div img {
+    width: 269px;
+    height: 312px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sectionCarrusel div .btnProducto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionCarrusel div .btnProducto a button {
+    width: 143px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 60px 0 0 0;
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .sectionCarrusel .tituloInfo {
+    position: relative;
+    left: -20px;
+  }
+  .carousel-control-prev span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: -8px;
+  }
+  .carousel-control-next span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: 15px;
+  }
+  .tabContainer {
+    width: 562px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    position: relative;
+    left: -20px;
+  }
+  .tabContainer .tabs {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3 rem;
+  }
+  .tabContainer .tabs li {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0e301a;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs li::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -82px;
+    width: 0%;
+    height: 4px;
+    background-color: #96aaa7;
+    -webkit-transition: width 0.8s ease;
+    transition: width 0.8s ease;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs .tabDesactivada {
+    cursor: default;
+    color: #0e301a4f;
+  }
+  .tabContainer .tabs li:nth-child(2) {
+    position: relative;
+    left: 5px;
+  }
+  .tabContainer .tabs li:nth-child(2)::after {
+    position: absolute;
+    left: -65px;
+  }
+  .tabContainer .tabs .activeTab::after {
+    width: 269px;
+    z-index: 1;
+  }
+  .tabContainer .lineaTabs {
+    z-index: 0;
+    width: 680px;
+    height: 0.5px;
+    background-color: #ebe3da;
+    position: absolute;
+    top: 28px;
+    left: -43px;
+  }
+  .tabContainer .containerInfo {
+    position: relative;
+    height: 432px;
+  }
+  .tabContainer .containerInfo .contenido {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 0 10px;
+  }
+  .tabContainer .containerInfo .contenido p,
+  .tabContainer .containerInfo .contenido li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #0e301a;
+    list-style: none;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints {
+    margin-top: 10px;
+    padding-left: 70px;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints li {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenido h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0e301a;
+    padding: 36px 0 18px 0;
+  }
+  .tabContainer .containerInfo .contenido div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenido div ul li {
+    color: #0e301a;
+    list-style: disc;
+    width: 125px;
+  }
+  .tabContainer .containerInfo .contenido div .liBalsamo li {
+    width: 150px;
+  }
+  .tabContainer .containerInfo .contenido div .liCombo li {
+    width: 300px;
+  }
+  .tabContainer .containerInfo .contenido div .listaDiferenteAncho li {
+    width: 149px;
+  }
+  .tabContainer .containerInfo .contenido .listaBulletPoints {
+    position: relative;
+    left: -15px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div svg {
+    width: 22px;
+    height: 22px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div p {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo li {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  .tabContainer .containerInfo .contenido.activeContenido {
+    display: block;
+    -webkit-animation: fade 1s ease;
+            animation: fade 1s ease;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1439px) {
+  .sectionCarrusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 55px;
+  }
+  .sectionCarrusel .carousel {
+    width: 372px;
+  }
+  .sectionCarrusel div {
+    width: 269px;
+  }
+  .sectionCarrusel div .carousel-inner {
+    position: relative;
+    left: 55px;
+  }
+  .sectionCarrusel div button {
+    color: white;
+  }
+  .sectionCarrusel div .carousel-indicators button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 9px;
+    background-color: rgba(255, 255, 255, 0.781);
+  }
+  .sectionCarrusel div .carousel-indicators button.active {
+    background-color: white;
+  }
+  .sectionCarrusel div .carousel-indicators .indicator-combo {
+    position: relative;
+    top: -40px;
+  }
+  .sectionCarrusel div div h1 {
+    color: #0e301a;
+    font-size: 23px;
+    text-align: left;
+    width: 269px;
+    padding-top: 10px;
+    margin-bottom: 47px;
+  }
+  .sectionCarrusel div div ul li {
+    color: #0e301a;
+    font-size: 15px;
+    font-weight: 400;
+    width: 245px;
+    margin-bottom: 5px;
+  }
+  .sectionCarrusel div div div img {
+    width: 269px;
+    height: 312px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sectionCarrusel div .btnProducto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionCarrusel div .btnProducto a button {
+    width: 143px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 60px 0 0 0;
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .sectionCarrusel div .btnProducto a button:hover {
+    color: black;
+    background-color: #c3b09a;
+  }
+  .sectionCarrusel .tituloInfo {
+    position: relative;
+    left: -20px;
+    margin-left: 50px;
+  }
+  .carousel-control-prev span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: -8px;
+  }
+  .carousel-control-next span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: 15px;
+  }
+  .tabContainer {
+    width: 562px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    position: relative;
+    left: -20px;
+  }
+  .tabContainer .tabs {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3rem;
+  }
+  .tabContainer .tabs li {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0e301a;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs li::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -82px;
+    width: 0%;
+    height: 4px;
+    background-color: #96aaa7;
+    -webkit-transition: width 0.8s ease;
+    transition: width 0.8s ease;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs .tabDesactivada {
+    cursor: default;
+    color: #0e301a4f;
+  }
+  .tabContainer .tabs li:nth-child(2) {
+    position: relative;
+    left: 5px;
+  }
+  .tabContainer .tabs li:nth-child(2)::after {
+    position: absolute;
+    left: -65px;
+  }
+  .tabContainer .tabs .activeTab::after {
+    width: 269px;
+    z-index: 1;
+  }
+  .tabContainer .lineaTabs {
+    z-index: 0;
+    width: 680px;
+    height: 0.5px;
+    background-color: #ebe3da;
+    position: absolute;
+    top: 28px;
+    left: -43px;
+  }
+  .tabContainer .containerInfo {
+    position: relative;
+    height: 432px;
+  }
+  .tabContainer .containerInfo .contenido {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 0 10px;
+  }
+  .tabContainer .containerInfo .contenido p,
+  .tabContainer .containerInfo .contenido li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #0e301a;
+    list-style: none;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints {
+    margin-top: 10px;
+    padding-left: 70px;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints li {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenido h5 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0e301a;
+    padding: 36px 0 18px 0;
+  }
+  .tabContainer .containerInfo .contenido div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenido div ul li {
+    color: #0e301a;
+    list-style: disc;
+    width: 125px;
+  }
+  .tabContainer .containerInfo .contenido div .liBalsamo li {
+    width: 150px;
+  }
+  .tabContainer .containerInfo .contenido div .liCombo li {
+    width: 300px;
+  }
+  .tabContainer .containerInfo .contenido div .listaDiferenteAncho li {
+    width: 149px;
+  }
+  .tabContainer .containerInfo .contenido .listaBulletPoints {
+    position: relative;
+    left: -15px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div svg {
+    width: 22px;
+    height: 22px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div p {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo li {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  .tabContainer .containerInfo .contenido.activeContenido {
+    display: block;
+    -webkit-animation: fade 1s ease;
+            animation: fade 1s ease;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionCarrusel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 55px;
+  }
+  .sectionCarrusel .carousel {
+    width: 564px;
+  }
+  .sectionCarrusel .tituloInfo {
+    padding-top: 30px;
+    margin-left: 150px;
+  }
+  .sectionCarrusel div {
+    width: 564px;
+  }
+  .sectionCarrusel div .carousel-inner {
+    position: relative;
+    left: 120px;
+  }
+  .sectionCarrusel div button {
+    color: white;
+  }
+  .sectionCarrusel div .carousel-indicators button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 9px;
+    background-color: rgba(255, 255, 255, 0.781);
+  }
+  .sectionCarrusel div .carousel-indicators button.active {
+    background-color: white;
+  }
+  .sectionCarrusel div div h1 {
+    color: #0e301a;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 47px;
+  }
+  .sectionCarrusel div div ul {
+    padding-left: 45px;
+  }
+  .sectionCarrusel div div ul li {
+    color: #0e301a;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    width: 535px;
+  }
+  .sectionCarrusel div div div img {
+    width: 488px;
+    height: 520px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sectionCarrusel div .btnProducto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sectionCarrusel div .btnProducto a button {
+    width: 161px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 60px 0 0 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .sectionCarrusel div .btnProducto a button:hover {
+    color: black;
+    background-color: #c3b09a;
+  }
+  .carousel-control-prev span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: 50px;
+  }
+  .carousel-control-next span {
+    width: 24px;
+    height: 48px;
+    position: relative;
+    left: 113px;
+  }
+  .tabContainer {
+    width: 994px;
+    margin: 50px auto;
+    position: relative;
+    left: -20px;
+  }
+  .tabContainer .tabs {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3rem;
+  }
+  .tabContainer .tabs li {
+    font-size: 27px;
+    font-weight: 600;
+    color: #0e301a;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs li::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -110px;
+    width: 0%;
+    height: 4px;
+    background-color: #96aaa7;
+    -webkit-transition: width 0.8s ease;
+    transition: width 0.8s ease;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .tabContainer .tabs .tabDesactivada {
+    cursor: default;
+    color: #0e301a4f;
+  }
+  .tabContainer .tabs li:nth-child(2) {
+    position: relative;
+    left: 5px;
+  }
+  .tabContainer .tabs li:nth-child(2)::after {
+    position: absolute;
+    left: -70px;
+  }
+  .tabContainer .tabs .activeTab::after {
+    width: 386px;
+    z-index: 1;
+  }
+  .tabContainer .lineaTabs {
+    z-index: 0;
+    width: 1200px;
+    height: 0.5px;
+    background-color: #ebe3da;
+    position: absolute;
+    top: 48px;
+    left: -60px;
+  }
+  .tabContainer .containerInfo {
+    position: relative;
+    height: 550px;
+  }
+  .tabContainer .containerInfo .contenido {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 0 55px;
+  }
+  .tabContainer .containerInfo .contenido p,
+  .tabContainer .containerInfo .contenido li {
+    font-size: 22px;
+    font-weight: 400;
+    color: #0e301a;
+    list-style: none;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints {
+    margin-top: 10px;
+    padding-left: 70px;
+  }
+  .tabContainer .containerInfo .contenido .svgBulletPoints li {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenido h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0e301a;
+    padding: 36px 0 18px 0;
+  }
+  .tabContainer .containerInfo .contenido div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenido div ul li {
+    color: #0e301a;
+    list-style: disc;
+    width: 322px;
+  }
+  .tabContainer .containerInfo .contenido div .liCombo li {
+    width: 425px;
+  }
+  .tabContainer .containerInfo .contenido div .listaDiferenteAncho li {
+    width: 322px;
+  }
+  .tabContainer .containerInfo .contenido .listaBulletPoints {
+    position: relative;
+    left: -15px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div svg {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo div p {
+    padding-left: 18px;
+  }
+  .tabContainer .containerInfo .contenidoMasInfo li {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  .tabContainer .containerInfo .contenido.activeContenido {
+    display: block;
+    -webkit-animation: fade 1s ease;
+            animation: fade 1s ease;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
