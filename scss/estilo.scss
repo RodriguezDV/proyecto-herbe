@@ -1,0 +1,43 @@
+@import "variables";
+@import "popUpWhatsApp";
+@import "inicio";
+@import "headerFooter";
+@import "nosotros";
+@import "cannabis-medicinal";
+@import "tienda";
+@import "producto";
+@import "lineaProductos";
+@import "medias";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+html {
+  overflow-x: hidden;
+}
+a, button{
+  all: unset;
+  cursor: pointer;
+}
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 226px;
+  p {
+    color: $verdeOscuro;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-weight: 400;
+  }
+  margin: 0 auto;
+}

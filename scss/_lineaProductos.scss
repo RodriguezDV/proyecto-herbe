@@ -1,0 +1,67 @@
+.lineaProductos{
+    @include flex-column;
+    align-items: center;
+    padding: 56px 16px 72px 16px;
+    gap: 41px;
+    width: fit-content;
+    margin: 0 auto;
+    .descripcion{
+        padding: 0 0.5px;
+        h1{
+            text-align: start;
+            font-size: 33px;
+            line-height: 40px;
+            color: $verdeOscuro;
+            font-weight: 800;
+        }
+        p{
+            text-align: start;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 400;
+            color: $verdeOscuro;
+            margin-top: 23px!important;
+            br{
+                display: none;
+            }
+        }
+    }
+    .productos{
+        @include flex-row;
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+        div{
+            @include flex-column;
+            width: 156px;
+            gap: 12px;
+            p{
+                text-align: start;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+            }
+            .inactivo{
+                margin-top: 7px;
+                background-color: black;
+                border-radius: 50px;
+                padding: 8px 32px;
+                transition: 150ms ease-in-out;
+                align-self: center;
+                &:hover{
+                    background-color: $terciarioOscuro1;
+                    button{
+                        color: black;
+                    }
+                }
+                button{
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: $blanco;
+                    transition: 200ms ease-in-out;
+                }
+            }
+        }
+    }
+}
