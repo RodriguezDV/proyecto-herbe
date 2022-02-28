@@ -388,6 +388,9 @@
       }
     }
   }
+  .popUpWhatsApp {
+    margin-bottom: -70px;
+  }
 }
 
 @media (min-width: $breakpoint-desktop) {
@@ -976,5 +979,8 @@
         }
       }
     }
+  }
+  .popUpWhatsApp {
+    margin-bottom: 39px;
   }
 }
