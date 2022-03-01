@@ -1444,6 +1444,7 @@
   width: 328px;
   height: 253px;
   gap: 31px;
+  margin-top: 40px;
 }
 
 .nosotros .nuestraFilosofia h1 {
@@ -1453,6 +1454,7 @@
   color: #285243;
   font-size: 33px;
   font-weight: 800;
+  line-height: 40px;
 }
 
 .nosotros .nuestraFilosofia p {
