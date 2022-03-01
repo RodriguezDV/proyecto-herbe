@@ -31,6 +31,8 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 170px;
+  display: flex;
+  flex-direction: column;
   p {
     color: $verdeOscuro;
     font-size: 15px;
