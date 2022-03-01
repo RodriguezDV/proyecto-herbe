@@ -6,6 +6,7 @@
   bottom: 11px;
   margin-right: 11px;
   display: inline-block;
+  z-index: 100;
 }
 
 .popUpWhatsApp p,
@@ -566,6 +567,7 @@
           flex-direction: column;
   gap: 34px;
   padding: 29px 16px 48px 16px;
+  background-color: white;
 }
 
 .inicio .nuestrasLineas h2 {
@@ -4242,7 +4244,8 @@ html {
   overflow-x: hidden;
 }
 
-a, button {
+a,
+button {
   all: unset;
   cursor: pointer;
 }
@@ -4250,7 +4253,7 @@ a, button {
 body {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 226px;
+  padding-bottom: 170px;
   margin: 0 auto;
 }
 
@@ -4261,5 +4264,9 @@ body p {
   text-align: center;
   letter-spacing: 0.005em;
   font-weight: 400;
+}
+
+body.inicioBody {
+  background-color: #f3eee9;
 }
 /*# sourceMappingURL=estilo.css.map */
