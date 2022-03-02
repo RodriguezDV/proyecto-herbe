@@ -4266,6 +4266,10 @@ body p {
   font-weight: 400;
 }
 
+body p.parrafoTabs {
+  text-align: start;
+}
+
 body.inicioBody {
   background-color: #f3eee9;
 }
