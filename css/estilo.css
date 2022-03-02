@@ -2,9 +2,10 @@
 .popUpWhatsApp {
   position: -webkit-sticky;
   position: sticky;
-  left: 1985px;
+  left: 97%;
   bottom: 11px;
   margin-right: 11px;
+  margin-top: auto;
   display: inline-block;
   z-index: 100;
 }
@@ -1443,6 +1444,7 @@
   width: 328px;
   height: 253px;
   gap: 31px;
+  margin-top: 40px;
 }
 
 .nosotros .nuestraFilosofia h1 {
@@ -1452,6 +1454,7 @@
   color: #285243;
   font-size: 33px;
   font-weight: 800;
+  line-height: 40px;
 }
 
 .nosotros .nuestraFilosofia p {
@@ -3655,7 +3658,7 @@
     margin-top: 20px;
   }
   .popUpWhatsApp {
-    margin-bottom: -70px;
+    margin-bottom: 40px;
   }
 }
 
@@ -4225,7 +4228,7 @@
     opacity: 1;
   }
   .popUpWhatsApp {
-    margin-bottom: 39px;
+    margin-bottom: 90px;
   }
 }
 
@@ -4254,6 +4257,13 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
 }
 
