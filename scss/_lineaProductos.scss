@@ -1,63 +1,76 @@
-.lineaProductos{
+.lineaProductos {
     @include flex-column;
     align-items: center;
-    padding: 56px 16px 72px 16px;
-    gap: 41px;
+    padding: 15.56vw 4.44vw 20vw 4.44vw;
+    gap: 11.39vw;
     width: fit-content;
     margin: 0 auto;
-    .descripcion{
-        padding: 0 0.5px;
-        h1{
+
+    .descripcion {
+        h1 {
             text-align: start;
-            font-size: 33px;
-            line-height: 40px;
+            font-size: 9.17vw;
+            line-height: 11.11vw;
             color: $verdeOscuro;
             font-weight: 800;
         }
-        p{
+
+        p {
             text-align: start;
-            font-size: 15px;
-            line-height: 24px;
+            font-size: 4.17vw;
+            line-height: 6.67vw;
             font-weight: 400;
             color: $verdeOscuro;
-            margin-top: 23px!important;
-            br{
+            margin-top: 6.39vw;
+
+            br {
                 display: none;
             }
         }
     }
-    .productos{
+
+    .productos {
         @include flex-row;
         width: 100%;
         justify-content: center;
-        gap: 16px;
-        div{
+        gap: 4.44vw;
+
+        div {
             @include flex-column;
-            width: 156px;
-            gap: 12px;
-            p{
+            width: 43.33vw;
+            gap: 3.33vw;
+
+            img {
+                width: 43.33vw;
+            }
+
+            p {
                 text-align: start;
-                font-size: 12px;
-                line-height: 16px;
+                font-size: 3.33vw;
+                line-height: 4.44vw;
                 font-weight: 400;
             }
-            .inactivo{
-                margin-top: 7px;
+
+            .inactivo {
+                margin-top: 1.94vw;
                 background-color: black;
-                border-radius: 50px;
-                padding: 8px 32px;
+                border-radius: 13.89vw;
+                padding: 2.22vw 8.89vw;
                 transition: 150ms ease-in-out;
                 align-self: center;
-                &:hover{
+
+                &:hover {
                     background-color: $terciarioOscuro1;
-                    button{
+
+                    button {
                         color: black;
                     }
                 }
-                button{
+
+                button {
                     font-weight: 500;
-                    font-size: 13px;
-                    line-height: 16px;
+                    font-size: 3.61vw;
+                    line-height: 4.44vw;
                     color: $blanco;
                     transition: 200ms ease-in-out;
                 }

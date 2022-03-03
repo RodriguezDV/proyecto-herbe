@@ -1,114 +1,139 @@
-.cannabis-medicinal{
+.cannabis-medicinal {
     background-color: $blanco;
-    p{
+
+    p {
+        font-size: 4.17vw;
+        line-height: 6.67vw;
         text-align: start;
-        color: $terciarioClaro;
     }
-    .banner{
+
+    .banner {
         width: 100%;
-        height: 280px;
+        height: 77.78vw;
         background-image: url("../img/cannabis_fondo_mobile.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 27px 16px 24px 16px;
-        h1{
+        padding: 7.5vw 4.44vw 6.67vw 4.44vw;
+
+        h1 {
             color: $terciarioClaro;
-            font-size: 33px;
-            line-height: 40px;
+            font-size: 9.17vw;
+            line-height: 11.11vw;
             font-weight: 800;
-            width: 208px;
-            height: 132px;
-            margin-bottom: 24px!important;
+            width: 57.78vw;
+            height: 36.67vw;
+            margin-bottom: 6.67vw;
         }
-        p{
-            width: 327px;
+
+        p {
+            width: 90.83vw;
+            text-align: start;
+            color: $terciarioClaro;
         }
     }
-    .tituloHistoria{
+
+    .tituloHistoria {
         @include flex-row;
         align-items: center;
         justify-content: space-between;
-        margin: 48px 0 31px;
-        .titulo{
-            padding: 72px 14px;
-            width: 178px;
-            height: 208px;
+        margin: 13.33vw 0 8.61vw;
+
+        .titulo {
+            padding: 20vw 3.89vw;
+            width: 49.44vw;
+            height: 57.78vw;
             margin: 0 auto;
-            h2{
+
+            h2 {
                 text-align: center;
                 color: $secundarioOscuro;
-                font-size: 23px;
+                font-size: 6.39vw;
                 font-weight: 700;
             }
         }
-        .texto{
+
+        .texto {
             background: $terciarioClaro;
-            padding: 35px 19px 40px 19px;
-            p{
-            color: $verdeOscuro;
-            width: 140px;
-            height: 137px;
-            font-weight: 400;
+            padding: 9.72vw 5.28vw 11.11vw 5.28vw;
+
+            p {
+                color: $verdeOscuro;
+                width: 38.89vw;
+                height: 38.06vw;
+                font-weight: 400;
             }
-            .inactivo{
+
+            .inactivo {
                 display: none
             }
         }
     }
-    .historia{
+
+    .historia {
         @include flex-column;
-        gap: 25px;
-        padding: 0 17px;
-        p{
+        gap: 6.94vw;
+        padding: 0 4.72vw;
+
+        p {
             color: $verdeOscuro;
         }
     }
-    .productos{
+
+    .productos {
         @include flex-column;
         align-items: center;
-        gap: 37px;
-        padding: 0 16px;
-        margin: 37px 0px 40px 0px;
-        div{
+        gap: 10.28vw;
+        padding: 0 4.44vw;
+        margin: 10.28vw 0px 11.11vw 0px;
+
+        div {
             @include flex-row;
             align-items: center;
             width: 100%;
-            gap: 20px;
-            img{
-                width: 100px;
-                height: 100px
+            gap: 5.56vw;
+
+            img {
+                width: 27.78vw;
+                height: 27.78vw;
             }
-            div{
+
+            div {
                 @include flex-column;
                 align-items: flex-start;
-                width: 208px;
-                gap: 4px;
-                h4{
+                width: 57.78vw;
+                gap: 4.44vw;
+
+                h4 {
                     color: $verdeOscuro;
-                    font-size: 19px;
+                    font-size: 5.28vw;
                     font-weight: 600;
                 }
-                p{
+
+                p {
                     color: $verdeOscuro;
                 }
             }
         }
-        .invertido{
+
+        .invertido {
             flex-direction: row-reverse;
         }
     }
-    .mensaje{
-        padding: 40px 0 45px;
-        margin: 0 16px 64px;
+
+    .mensaje {
+        padding: 11.11vw 0 12.5vw;
+        margin: 0 4.44vw 17.78vw;
         background: $terciarioClaro;
-        h4{
+
+        h4 {
             color: $verdeOscuro;
             text-align: center;
-            font-size: 19px;
-            line-height: 24px;
-            width: 324px;
-            height: 124px;
-            margin: 0 auto!important;
+            font-size: 5.28vw;
+            line-height: 6.67vw;
+            font-weight: 600;
+            width: 90vw;
+            height: 34.44vw;
+            margin: 0 auto;
         }
     }
 }
