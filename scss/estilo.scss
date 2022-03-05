@@ -55,7 +55,7 @@ body.inicioBody {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: $verdeClaro;
+    background-color: #1C4B45;
     img{
       width: 20px;
       height: 20px;
@@ -64,6 +64,7 @@ body.inicioBody {
     p{
       font-size: 12px;
       margin: 5px 0!important;
+      color: $blanco;
     }
   }
 }

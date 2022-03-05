@@ -5,10 +5,10 @@
   left: 97%;
   bottom: 11px;
   margin-right: 11px;
-  margin-top: auto;
+  margin-top: 12px;
   display: inline-block;
   z-index: 100;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .popUpWhatsApp p,
@@ -244,7 +244,6 @@
   z-index: 8;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin-top: 10px;
   padding: 7px;
   border: none;
   outline: none;
@@ -854,7 +853,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7.5vw 3.33vw 12.22vw 3.33vw;
+  padding: 7.5vw 3.33vw 0 3.33vw;
   width: 100%;
   gap: 8.61vw;
   overflow: hidden;
@@ -1445,7 +1444,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 17.78vw;
 }
 
 .nosotros p {
@@ -1735,7 +1733,7 @@
 
 .cannabis-medicinal .mensaje {
   padding: 11.11vw 0 12.5vw;
-  margin: 0 4.44vw 17.78vw;
+  margin: 0 4.44vw 0;
   background: #F3EEE9;
 }
 
@@ -3216,7 +3214,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15.56vw 4.44vw 20vw 4.44vw;
+  padding: 15.56vw 4.44vw 0 4.44vw;
   gap: 11.39vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -3574,7 +3572,7 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 4.84vw;
-    padding: 3.63vw 1.61vw 5.91vw 1.61vw;
+    padding: 3.63vw 1.61vw 0 1.61vw;
   }
   .inicio .comunidad h3 {
     font-size: 2.55vw;
@@ -3626,7 +3624,7 @@
     height: 13.98vw;
   }
   .nosotros {
-    padding: 7.53vw 4.3vw 12.9vw 4.3vw;
+    padding: 7.53vw 4.3vw 0 4.3vw;
   }
   .nosotros p {
     font-size: 2.02vw;
@@ -3788,7 +3786,7 @@
     font-weight: 500;
   }
   .lineaProductos {
-    padding: 9.68vw 4.03vw 20.03vw 4.03vw;
+    padding: 9.68vw 4.03vw 5.24vw 4.03vw;
     gap: 7.53vw;
   }
   .lineaProductos .descripcion {
@@ -3834,6 +3832,9 @@
   .lineaProductos .productos div .inactivo button {
     font-size: 1.75vw;
     line-height: 2.15vw;
+  }
+  .popUpWhatsApp {
+    margin-top: 20px;
   }
 }
 
@@ -4103,7 +4104,7 @@
   }
   .inicio .comunidad {
     gap: 2.01vw;
-    padding: 2.71vw 0.83vw 4.44vw 0.83vw;
+    padding: 2.71vw 0.83vw 0 0.83vw;
   }
   .inicio .comunidad h3 {
     color: #354044;
@@ -4175,7 +4176,7 @@
     height: 1.39vw;
   }
   .nosotros {
-    padding: 5.56vw 8.33vw 12.22vw 8.33vw;
+    padding: 5.56vw 8.33vw 7.01vw 8.33vw;
     text-align: start;
   }
   .nosotros p {
@@ -4359,7 +4360,7 @@
             flex-direction: column;
   }
   .cannabis-medicinal .mensaje {
-    margin: 0 8.47vw 6.67vw;
+    margin: 0 8.47vw 0;
     padding: 2.78vw 7.08vw;
   }
   .cannabis-medicinal .mensaje h4 {
@@ -4377,7 +4378,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 9.03vw 8.33vw 7.36vw 8.33vw;
+    padding: 9.03vw 8.33vw 0 8.33vw;
     gap: 8.4vw;
   }
   .lineaProductos .descripcion h1 {
@@ -4461,6 +4462,7 @@
   }
   .popUpWhatsApp {
     margin-bottom: 126px;
+    margin-top: 17px;
     bottom: 0.76vw;
     margin-right: 0.76vw;
   }
@@ -4518,7 +4520,6 @@
   .popUpWhatsApp .nav-bottom .whatsapp-button {
     width: 3.19vw;
     height: 3.19vw;
-    margin-top: 0.69vw;
     padding: 0.49vw;
     -webkit-box-shadow: 0.07vw 0.07vw 6px 0px rgba(68, 68, 68, 0.705);
             box-shadow: 0.07vw 0.07vw 6px 0px rgba(68, 68, 68, 0.705);
@@ -4609,7 +4610,7 @@ body.inicioBody {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #49C13A;
+  background-color: #1C4B45;
 }
 
 .desarrolladoPor div img {
@@ -4621,5 +4622,6 @@ body.inicioBody {
 .desarrolladoPor div p {
   font-size: 12px;
   margin: 5px 0 !important;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=estilo.css.map */

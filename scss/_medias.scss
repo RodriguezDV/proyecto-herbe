@@ -290,7 +290,7 @@
       margin: unset;
       align-items: center;
       gap: 4.84vw;
-      padding: 3.63vw 1.61vw 5.91vw 1.61vw;
+      padding: 3.63vw 1.61vw 0 1.61vw;
 
       h3 {
         font-size: 2.55vw;
@@ -350,7 +350,7 @@
   }
 
   .nosotros {
-    padding: 7.53vw 4.3vw 12.9vw 4.3vw;
+    padding: 7.53vw 4.3vw 0 4.3vw;
 
     p {
       font-size: 2.02vw;
@@ -536,7 +536,7 @@
   }
 
   .lineaProductos {
-    padding: 9.68vw 4.03vw 20.03vw 4.03vw;
+    padding: 9.68vw 4.03vw 5.24vw 4.03vw;
     gap: 7.53vw;
 
     .descripcion {
@@ -587,7 +587,9 @@
       }
     }
   }
-
+  .popUpWhatsApp{
+  margin-top: 20px;
+  }
 }
 
 @media only screen and (min-width: $breakpoint-desktop) {
@@ -887,7 +889,7 @@
 
     .comunidad {
       gap: 2.01vw;
-      padding: 2.71vw 0.83vw 4.44vw 0.83vw;
+      padding: 2.71vw 0.83vw 0 0.83vw;
 
       h3 {
         color: #354044;
@@ -965,7 +967,7 @@
   }
 
   .nosotros {
-    padding: 5.56vw 8.33vw 12.22vw 8.33vw;
+    padding: 5.56vw 8.33vw 7.01vw 8.33vw;
     text-align: start;
 
     p {
@@ -1154,7 +1156,7 @@
     }
 
     .mensaje {
-      margin: 0 8.47vw 6.67vw;
+      margin: 0 8.47vw 0;
       padding: 2.78vw 7.08vw;
 
       h4 {
@@ -1170,7 +1172,7 @@
   .lineaProductos {
     flex-direction: row;
     align-items: flex-start;
-    padding: 9.03vw 8.33vw 7.36vw 8.33vw;
+    padding: 9.03vw 8.33vw 0 8.33vw;
     gap: 8.4vw;
 
     .descripcion {
@@ -1260,6 +1262,7 @@
 
   .popUpWhatsApp {
     margin-bottom: 126px;
+    margin-top: 17px;
     bottom: 0.76vw;
     margin-right: 0.76vw;
 
@@ -1326,7 +1329,6 @@
       .whatsapp-button {
         width: 3.19vw;
         height: 3.19vw;
-        margin-top: 0.69vw;
         padding: 0.49vw;
         box-shadow: 0.07vw 0.07vw 6px 0px rgba(68, 68, 68, 0.705);
 
