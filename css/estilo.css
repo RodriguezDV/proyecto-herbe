@@ -8,6 +8,7 @@
   margin-top: auto;
   display: inline-block;
   z-index: 100;
+  margin-bottom: 36px;
 }
 
 .popUpWhatsApp p,
@@ -22,7 +23,7 @@
 
 @media only screen and (min-width: 390px) {
   .popUpWhatsApp {
-    margin-bottom: 40px;
+    margin-bottom: 78px;
   }
 }
 
@@ -659,6 +660,7 @@
   background-position: top;
   background-size: cover;
   padding: 15.56vw 8.33vw 0;
+  background-color: #FFFFFF;
 }
 
 .inicio .testimonios .carousel {
@@ -794,6 +796,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
+  background-color: #FFFFFF;
 }
 
 .inicio .comoTrabajamos h3 {
@@ -958,6 +961,11 @@
   display: none;
 }
 
+.inicio .comunidad .containerRedes .reversa {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 @-webkit-keyframes grow {
   from {
     opacity: 30%;
@@ -1054,7 +1062,7 @@
     margin-top: 20px;
     padding-top: 15px;
     position: absolute;
-    bottom: 0;
+    bottom: 28px;
   }
   .footerEstilos div {
     display: -webkit-box;
@@ -1203,7 +1211,7 @@
     color: #ebe3da;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 28px;
     padding-bottom: 175px;
     padding-top: 25px;
   }
@@ -1352,7 +1360,7 @@
     height: 256px;
     color: #ebe3da;
     position: absolute;
-    bottom: 0;
+    bottom: 28px;
     padding-bottom: 175px;
     width: 100%;
   }
@@ -3827,9 +3835,6 @@
     font-size: 1.75vw;
     line-height: 2.15vw;
   }
-  .popUpWhatsApp {
-    margin-bottom: 40px;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -4455,7 +4460,7 @@
     opacity: 1;
   }
   .popUpWhatsApp {
-    margin-bottom: 90px;
+    margin-bottom: 126px;
     bottom: 0.76vw;
     margin-right: 0.76vw;
   }
@@ -4576,11 +4581,7 @@ body {
 
 body p {
   color: #0E301A;
-  font-size: 15px;
-  line-height: 24px;
   text-align: center;
-  letter-spacing: 0.005em;
-  font-weight: 400;
 }
 
 body p.parrafoTabs {
@@ -4589,5 +4590,36 @@ body p.parrafoTabs {
 
 body.inicioBody {
   background-color: #f3eee9;
+}
+
+.desarrolladoPor div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #49C13A;
+}
+
+.desarrolladoPor div img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.desarrolladoPor div p {
+  font-size: 12px;
+  margin: 5px 0 !important;
 }
 /*# sourceMappingURL=estilo.css.map */

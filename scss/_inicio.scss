@@ -247,6 +247,7 @@
     background-position: top;
     background-size: cover;
     padding: 15.56vw 8.33vw 0;
+    background-color: $blanco;
 
     .carousel {
       width: 91.11vw;
@@ -349,6 +350,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
+    background-color: $blanco;
 
     h3 {
       font-size: 5.28vw;
@@ -461,6 +463,9 @@
 
       .inactivo {
         display: none;
+      }
+      .reversa{
+        transform: rotate(180deg);
       }
     }
   }
