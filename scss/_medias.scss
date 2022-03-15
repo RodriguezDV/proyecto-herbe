@@ -203,9 +203,11 @@
             height: 43.01vw;
             padding: 3.9vw;
             top: 7.93vw;
+            margin-left: 0.54vw;
 
             div {
               gap: 3.36vw;
+              height: 22.31vw;
 
               p {
                 font-size: 2.02vw;
@@ -829,11 +831,13 @@
           .carousel-item {
             width: 100%;
             height: 24.44vw;
-            padding: 2.71vw;
+            padding: 2.71vw 3.33vw;
             top: 4.1vw;
+            margin-left: 0;
 
             div {
               gap: 1.6vw;
+              height: 13.54vw;
 
               p {
                 font-size: 1.53vw;

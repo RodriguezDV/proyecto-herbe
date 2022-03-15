@@ -695,6 +695,7 @@
   height: 88.89vw;
   padding: 8.06vw;
   top: 16.36vw;
+  margin-left: 1.03vw;
 }
 
 .inicio .testimonios .carousel .carousel-inner .carousel-item div {
@@ -708,7 +709,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 6.94vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 47.78vw;
 }
 
 .inicio .testimonios .carousel .carousel-inner .carousel-item div p {
@@ -3497,9 +3501,11 @@
     height: 43.01vw;
     padding: 3.9vw;
     top: 7.93vw;
+    margin-left: 0.54vw;
   }
   .inicio .testimonios .carousel .carousel-inner .carousel-item div {
     gap: 3.36vw;
+    height: 22.31vw;
   }
   .inicio .testimonios .carousel .carousel-inner .carousel-item div p {
     font-size: 2.02vw;
@@ -4054,11 +4060,13 @@
   .inicio .testimonios .carousel .carousel-inner .carousel-item {
     width: 100%;
     height: 24.44vw;
-    padding: 2.71vw;
+    padding: 2.71vw 3.33vw;
     top: 4.1vw;
+    margin-left: 0;
   }
   .inicio .testimonios .carousel .carousel-inner .carousel-item div {
     gap: 1.6vw;
+    height: 13.54vw;
   }
   .inicio .testimonios .carousel .carousel-inner .carousel-item div p {
     font-size: 1.53vw;

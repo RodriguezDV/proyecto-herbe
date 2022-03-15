@@ -276,12 +276,13 @@
           height: 88.89vw;
           padding: 8.06vw;
           top: 16.36vw;
+          margin-left: 1.03vw;
 
           div {
             @include flex-column;
             align-items: center;
-            gap: 6.94vw;
-
+            justify-content: space-between;
+            height: 47.78vw;
             p {
               font-size: 4.17vw;
               line-height: 6.67vw;
